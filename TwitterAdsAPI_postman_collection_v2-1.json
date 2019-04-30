@@ -3061,6 +3061,12 @@
 											"disabled": true
 										},
 										{
+											"key": "primary_web_event_tag",
+											"value": "",
+											"description": "sometimes required",
+											"disabled": true
+										},
+					                    {
 											"key": "advertiser_user_id",
 											"value": "",
 											"description": "optional",
@@ -3122,12 +3128,6 @@
 										},
 										{
 											"key": "optimization",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "primary_web_event_tag",
 											"value": "",
 											"description": "optional",
 											"disabled": true
