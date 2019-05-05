@@ -4,9 +4,13 @@ This is a Postman collection for the Twitter Ads API endpoints. Please see the f
 https://developer.twitter.com/en/docs/ads/general/overview
 
 ## Installation
+
 ### Quick install
-Quick install link: https://t.co/postman-ads-api
-- Make sure you installed the [Postman client](https://www.getpostman.com/downloads/) on your machine then just click `Run in Postman` button at the right-top. Or, you could also install this collection from your Postman client directly by opening `New` => `Template` then search "Twitter Ads API".
+Just click the button below!  
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/369a02c0adc626ff6a06)  
+(direct link: https://t.co/postman-ads-api)
+
+- Make sure you installed the [Postman client](https://www.getpostman.com/downloads/) on your machine then just click `Run in Postman` button. Or, you could also install this collection from your Postman client directly by opening `New` => `Template` then search "Twitter Ads API".
 
 ### Manual install
 Download this repository and import below files into your Postman client:
