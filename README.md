@@ -43,6 +43,8 @@ As mentioned above, you need to configure your credentials. To get those, please
 - [Obtaining Ads Account credentials
 ](https://developer.twitter.com/en/docs/ads/general/guides/obtaining-ads-account-access)
 
+You could also use [tw-oob-oauth-cli](https://github.com/smaeda-ks/tw-oob-oauth-cli) - A simple CLI client for Twitter's OOB OAuth ([PIN-based OAuth](https://developer.twitter.com/en/docs/basics/authentication/overview/pin-based-oauth)), to get your tokens.
+
 Please be noted that the Ads API currently only supports OAuth 1.0a.
 Also, since this collection is configured to use environment variables for authentication across the requests, you don't need to change the setting at all.
 
