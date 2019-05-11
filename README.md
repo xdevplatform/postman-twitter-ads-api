@@ -3,9 +3,17 @@
 This is a Postman collection for the Twitter Ads API endpoints. Please see the following documentation for more details about the API spec:
 https://developer.twitter.com/en/docs/ads/general/overview
 
+## twurl (CLI) and Postman (GUI)
+
+Over the years, we've encouraged you to install [twurl](https://developer.twitter.com/en/docs/tutorials/using-twurl.html) - our official command-line HTTP client tool, tailored specifically for the Twitter API.
+While twurl has been a great CLI (command-line interface) tool we love, we also wanted to provide additional options that can optimize your development experience for the Ads API furthermore.
+
+We've received various feedback about the tool. For instance, sometimes CLI tools such as twurl can be cumbersome to set up complicated queries on command line and change on-the-fly in testing. Installing twurl might not be possible (restricted) in a certain scenario as it requires setting up Ruby environment on your machine. We believe Postman could be useful in these situations.
+
 ## Installation
 
 ### Quick install
+
 Just click the button below!  
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/369a02c0adc626ff6a06#?env%5BTwitter%20Ads%20API%5D=W3sia2V5IjoiYWNjb3VudF9pZCIsInZhbHVlIjoieW91cl9hZHNfYWNjb3VudF9pZCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoidmVyc2lvbiIsInZhbHVlIjoiNSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29uc3VtZXJfa2V5IiwidmFsdWUiOiJ5b3VyX2NvbnN1bWVyX2tleSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29uc3VtZXJfc2VjcmV0IiwidmFsdWUiOiJ5b3VyX2NvbnN1bWVyX3NlY3JldCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiYWNjZXNzX3Rva2VuIiwidmFsdWUiOiJ5b3VyX2FjY2Vzc190b2tlbiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoidG9rZW5fc2VjcmV0IiwidmFsdWUiOiJ5b3VyX3Rva2VuX3NlY3JldCIsImVuYWJsZWQiOnRydWV9XQ==)  
 (direct link: https://t.co/postman-ads-api)
@@ -13,12 +21,17 @@ Just click the button below!
 - Make sure you installed the [Postman client](https://www.getpostman.com/downloads/) on your machine then just click `Run in Postman` button. Or, you could also install this collection from your Postman client directly by opening `New` => `Template` then search "Twitter Ads API".
 
 ### Manual install
+
 Download this repository and import below files into your Postman client:
 
 |Name|Description|
 |---|---|
 |[TwitterAdsAPI_postman_collection_v2-1.json](https://github.com/smaeda-ks/postman-twitter-ads-api/blob/master/TwitterAdsAPI_postman_collection_v2-1.json)|main collection file|
 |[TwitterAdsAPI_postman_environment.json](https://github.com/smaeda-ks/postman-twitter-ads-api/blob/master/TwitterAdsAPI_postman_environment.json)|pre-configured environment file|
+
+### Update to the latest collection
+
+While we keep this collection up to date by adding new endpoints/removing retired endpoints, your installed collection will not be updated automatically, unfortunately. Therefore, we encourage you to subscribe to this repository and re-install (import) when we release a new version.
 
 ## Environment
 
