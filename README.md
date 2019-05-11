@@ -6,7 +6,7 @@ https://developer.twitter.com/en/docs/ads/general/overview
 ## twurl (CLI) and Postman (GUI)
 
 Over the years, we've encouraged you to install [twurl](https://developer.twitter.com/en/docs/tutorials/using-twurl.html) - our official command-line HTTP client tool, tailored specifically for the Twitter API.
-While twurl has been a great CLI (command-line interface) tool we love, we also wanted to provide additional options that can optimize your development experience for the Ads API furthermore.
+While twurl continues to be a great CLI (command-line interface) tool we love, we also wanted to provide additional options that can optimize your development experience for the Ads API furthermore.
 
 We've received various feedback about the tool. For instance, sometimes CLI tools such as twurl can be cumbersome to set up complicated queries on command line and change on-the-fly in testing. Installing twurl might not be possible (restricted) in a certain scenario as it requires setting up Ruby environment on your machine. We believe Postman could be useful in these situations.
 
