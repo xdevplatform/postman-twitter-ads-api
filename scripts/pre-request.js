@@ -9,10 +9,16 @@
  * In order to use this Pre-request script, you need to change your "Authorization" type to
  * "No Auth" only for the target request and do not apply to the top-level object.
  */
-const oauth_consumer_key = pm.environment.get('consumer_key');
-const oauth_consumer_secret = pm.environment.get('consumer_secret');
-const oauth_token = pm.environment.get('access_token');
-const oauth_secret = pm.environment.get('token_secret');
+
+// fetch all env variables that are currently defined
+const env_variables = pm.environment.toObject({
+    excludeDisabled: true
+});
+
+const oauth_consumer_key = env_variables.consumer_key;
+const oauth_consumer_secret = env_variables.consumer_secret;
+const oauth_token = env_variables.access_token;
+const oauth_secret = env_variables.token_secret;
 const oauth_signing_key = `${oauth_consumer_secret}&${oauth_secret}`;
 
 // create random oauth_nonce string
@@ -44,7 +50,9 @@ const url_query_string = pm.request.url.getQueryString({
 const url_query_string_array = url_query_string.split('&');
 let url_query_string_object = {};
 if (url_query_string !== "") {
-    url_query_string_object = JSON.parse(`{"${url_query_string.replace(/&/g, '","').replace(/=/g,'":"')}"}`, function(key, value) {return key === "" ? value : encodeURIComponent(value)});
+    url_query_string_object = JSON.parse(`{"${url_query_string.replace(/&/g, '","').replace(/=/g,'":"')}"}`, function(key, value) {
+        return key === "" ? value : encodeURIComponent(value)
+    });
 }
 
 // parse request.params
@@ -71,7 +79,7 @@ const oauth_parameter_string = oauth_parameter_string_array.join('&');
 let base_host = pm.request.url.getOAuth1BaseUrl();
 let regexp = /{{(.*?)}}/g;
 while (result = regexp.exec(base_host)) {
-    let value = pm.environment.get(result[1]);
+    let value = env_variables[result[1]];
     base_host = base_host.replace(new RegExp(`{{${result[1]}}}`, 'g'), value);
 }
 
