@@ -146,10 +146,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/jobs/accounts/{{account_id}}?end_time=&entity=&entity_ids=&granularity=&metric_groups=&placement=&start_time=",
 									"protocol": "https",
@@ -594,14 +590,9 @@
 								"header": [
 									{
 										"key": "audience-intelligence",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/audience_intelligence/conversations?conversation_type=&targeting_inputs=&audience_definition=",
 									"protocol": "https",
@@ -645,14 +636,9 @@
 								"header": [
 									{
 										"key": "audience-intelligence",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/audience_intelligence/demographics?targeting_inputs=&audience_definition=",
 									"protocol": "https",
@@ -975,10 +961,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences/:tailored_audience_id/permissions?granted_account_id=&permission_level=",
 									"protocol": "https",
@@ -1201,10 +1183,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences?name=",
 									"protocol": "https",
@@ -1237,14 +1215,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/tailored_audiences?audience_type=&child_segments=&name=&operation_type=&params=",
 									"protocol": "https",
@@ -1401,14 +1374,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences/:tailored_audience_id/users?operation_type=&params=&users=",
 									"protocol": "https",
@@ -1612,10 +1580,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts",
 									"protocol": "https",
@@ -1637,10 +1601,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}?",
 									"protocol": "https",
@@ -1677,10 +1637,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}",
 									"protocol": "https",
@@ -1947,10 +1903,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns?funding_instrument_id=&name=&start_time=",
 									"protocol": "https",
@@ -2035,14 +1987,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/campaigns?operation_type=&params=",
 									"protocol": "https",
@@ -2079,10 +2026,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns/:campaign_id?",
 									"protocol": "https",
@@ -2169,10 +2112,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns/:campaign_id",
 									"protocol": "https",
@@ -2309,10 +2248,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/features?feature_keys=",
 									"protocol": "https",
@@ -2343,10 +2278,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/features?feature_keys=",
 									"protocol": "https",
@@ -2508,10 +2439,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments?currency=&start_time=&type=",
 									"protocol": "https",
@@ -2570,10 +2497,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments/:funding_instrument_id?funding_instrument_id=",
 									"protocol": "https",
@@ -2623,10 +2546,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments/:funding_instrument_id?funding_instrument_id=",
 									"protocol": "https",
@@ -2876,10 +2795,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items?campaign_id=&objective=&placements=&product_type=",
 									"protocol": "https",
@@ -3035,14 +2950,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/line_items?operation_type=&params=",
 									"protocol": "https",
@@ -3079,10 +2989,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id?",
 									"protocol": "https",
@@ -3205,10 +3111,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id",
 									"protocol": "https",
@@ -3371,10 +3273,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_item_apps?app_store_identifier=&line_item_id=&os_type=",
 									"protocol": "https",
@@ -3415,10 +3313,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_item_apps/:line_item_app_id",
 									"protocol": "https",
@@ -3644,10 +3538,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_creatives?account_id&account_media_id&line_item_id",
 									"protocol": "https",
@@ -3694,10 +3584,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_creatives/:media_creative_id",
 									"protocol": "https",
@@ -3860,10 +3746,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_accounts?line_item_id=&user_id=",
 									"protocol": "https",
@@ -3899,10 +3781,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_accounts/:promoted_account_id",
 									"protocol": "https",
@@ -4065,10 +3943,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_tweets?line_item_id=&tweet_ids=",
 									"protocol": "https",
@@ -4104,10 +3978,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_tweets/:promoted_tweet_id",
 									"protocol": "https",
@@ -4702,10 +4572,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_promoted_tweets?line_item_id=&scheduled_tweet_id=",
 									"protocol": "https",
@@ -4741,10 +4607,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_promoted_tweets/:scheduled_promoted_tweet_id?scheduled_promoted_tweet_id=",
 									"protocol": "https",
@@ -4925,10 +4787,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_criteria?line_item_id=&targeting_type=&targeting_value=",
 									"protocol": "https",
@@ -4983,14 +4841,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/targeting_criteria?operation_type=&params=",
 									"protocol": "https",
@@ -5027,10 +4880,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_criteria/:targeting_criterion_id",
 									"protocol": "https",
@@ -5832,10 +5681,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tax_settings?",
 									"protocol": "https",
@@ -6081,10 +5926,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/user_settings/:user_id?user_id=",
 									"protocol": "https",
@@ -6298,10 +6139,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/account_media/:account_media_id",
 									"protocol": "https",
@@ -6535,10 +6372,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweet?",
 									"protocol": "https",
@@ -6831,10 +6664,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets?",
 									"protocol": "https",
@@ -6890,10 +6719,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id?",
 									"protocol": "https",
@@ -6950,10 +6775,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id",
 									"protocol": "https",
@@ -7015,10 +6836,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/preview/:draft_tweet_id",
 									"protocol": "https",
@@ -7157,10 +6974,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets?scheduled_at=",
 									"protocol": "https",
@@ -7221,10 +7034,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets/:scheduled_tweet_id?scheduled_tweet_id=",
 									"protocol": "https",
@@ -7292,10 +7101,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets/:scheduled_tweet_id?scheduled_tweet_id=",
 									"protocol": "https",
@@ -7505,10 +7310,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website?name=&website_title=&website_url=",
 									"protocol": "https",
@@ -7562,10 +7363,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id?",
 									"protocol": "https",
@@ -7629,10 +7426,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id",
 									"protocol": "https",
@@ -7798,10 +7591,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website?name=&title=&video_id=&website_url=",
 									"protocol": "https",
@@ -7848,10 +7637,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id?",
 									"protocol": "https",
@@ -7909,10 +7694,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id",
 									"protocol": "https",
@@ -8078,10 +7859,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download?name=&country_code=",
 									"protocol": "https",
@@ -8172,10 +7949,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id?",
 									"protocol": "https",
@@ -8275,10 +8048,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id",
 									"protocol": "https",
@@ -8444,10 +8213,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation?first_cta=&first_cta_tweet=&name=&thank_you_text=",
 									"protocol": "https",
@@ -8560,10 +8325,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id?",
 									"protocol": "https",
@@ -8687,10 +8448,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id",
 									"protocol": "https",
@@ -8856,10 +8613,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message?first_cta=&first_cta_welcome_message_id=&name=&recipient_user_id=",
 									"protocol": "https",
@@ -8954,10 +8707,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message?card_id=",
 									"protocol": "https",
@@ -9055,10 +8804,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message/:card_id",
 									"protocol": "https",
@@ -9224,10 +8969,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download?country_code=&name=&video_id=",
 									"protocol": "https",
@@ -9317,10 +9058,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id?",
 									"protocol": "https",
@@ -9420,10 +9157,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id",
 									"protocol": "https",
@@ -9589,10 +9322,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation?first_cta=&first_cta_tweet=&name=&thank_you_text=&video_id=",
 									"protocol": "https",
@@ -9710,10 +9439,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id?",
 									"protocol": "https",
@@ -9843,10 +9568,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id",
 									"protocol": "https",
@@ -10012,10 +9733,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message?first_cta=&first_cta_welcome_message_id=&name=&recipient_user_id=&video_id=",
 									"protocol": "https",
@@ -10109,10 +9826,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id?",
 									"protocol": "https",
@@ -10212,10 +9925,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id",
 									"protocol": "https",
@@ -10347,10 +10056,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library?",
 									"protocol": "https",
@@ -10430,10 +10135,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key?",
 									"protocol": "https",
@@ -10502,10 +10203,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key",
 									"protocol": "https",
@@ -10670,10 +10367,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/poll?duration_in_minutes=&first_choice=&name=&second_choice=",
 									"protocol": "https",
@@ -10738,10 +10431,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/poll/:card_id",
 									"protocol": "https",
@@ -10905,10 +10594,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions?call_to_action=&call_to_action_url=&line_item_id=",
 									"protocol": "https",
@@ -10949,10 +10634,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions/:preroll_call_to_action_id?",
 									"protocol": "https",
@@ -10997,10 +10678,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions/:preroll_call_to_action_id",
 									"protocol": "https",
@@ -11245,10 +10922,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_tags?app_store_identifier=&conversion_type=&os_type=&provider_app_event_id=&provider_app_event_name=",
 									"protocol": "https",
@@ -11323,10 +10996,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_tags/:id",
 									"protocol": "https",
@@ -11483,10 +11152,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_provider_configurations?provider_advertiser_id=",
 									"protocol": "https",
@@ -11517,10 +11182,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_provider_configurations/:id",
 									"protocol": "https",
@@ -11682,10 +11343,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_lists?app_store_identifiers=&name=",
 									"protocol": "https",
@@ -11721,10 +11378,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_lists/:app_list_id?app_list_id=",
 									"protocol": "https",
@@ -11894,10 +11547,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/conversion_event?app_id=&conversion_time=&conversion_type=&hashed_device_id=&os_type=",
 									"protocol": "https",
@@ -12102,10 +11751,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags?click_window=&name=&retargeting_enabled=&type=&view_through_window=",
 									"protocol": "https",
@@ -12156,10 +11801,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags/:web_event_tag_id?",
 									"protocol": "https",
@@ -12222,10 +11863,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags/:web_event_tag_id",
 									"protocol": "https",
