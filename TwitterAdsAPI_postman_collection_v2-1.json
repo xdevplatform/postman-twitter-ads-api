@@ -1,7 +1,7 @@
 {
 	"info": {
 		"name": "Twitter Ads API",
-		"description": "This is a Postman collection for the Twitter Ads API endpoints. Please see the following documentation for more details:\nhttps://developer.twitter.com/en/docs/ads/general/overview\n\nIn case you have an API-related question, you can also go to the [community forum](https://twittercommunity.com/c/advertiser-api) and search/ask with [required information](https://twittercommunity.com/t/what-information-do-i-need-to-provide-in-order-to-get-help-on-the-forums-as-quickly-as-possible/58097).\n\n\n## Installation\n\nMake sure you installed the [Postman client](https://www.getpostman.com/downloads/) on your machine then just click `Run in Postman` button at the right-top. Or, you could also install this collection from your Postman client directly by opening `New` => `Template` then search \"Twitter Ads API\".\n\n## Environment\n\nThis collection includes a pre-configured environment setting. You will be needing to set up below variables in order to run each request:\n\n|Name|Description|\n|---|---|\n|`account_id`|Your Ads Account ID.|\n|`version`|Please use the [latest version](https://developer.twitter.com/en/docs/ads/general/overview/versions).|\n|`consumer_key`||\n|`consumer_secret`||\n|`access_token`||\n|`token_secret`||\n\n## Authentication\n\nAs mentioned above, you need to configure your credentials. To get those, please see the following information:\n\n- [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)\n- [Obtaining Ads Account credentials\n](https://developer.twitter.com/en/docs/ads/general/guides/obtaining-ads-account-access)\n\nPlease be noted that the Ads API currently only supports OAuth 1.0a.",
+		"description": "This is a Postman collection for the Twitter Ads API endpoints. Please see the following documentation for more details:\nhttps://developer.twitter.com/en/docs/ads/general/overview\n\nIn case you have an API-related question, you can also go to the [community forum](https://twittercommunity.com/c/advertiser-api) and search/ask with [required information](https://twittercommunity.com/t/what-information-do-i-need-to-provide-in-order-to-get-help-on-the-forums-as-quickly-as-possible/58097).\n\n\n## Installation\n\n### Quick install\n\nMake sure you installed the [Postman client](https://www.getpostman.com/downloads/) on your machine then just click `Run in Postman` button at the right-top. Or, you could also install this collection from your Postman client directly by opening `New` => `Template` then search \"Twitter Ads API\".\n\n### Manual install\n\nYou can also download this collection files from GitHub repo here:  \nhttps://github.com/twitterdev/postman-twitter-ads-api\n\n## Environment\n\nThis collection includes a pre-configured environment setting. You will be needing to set up below variables in order to run each request:\n\n|Name|Description|\n|---|---|\n|`account_id`|Your Ads Account ID.|\n|`version`|Please use the [latest version](https://developer.twitter.com/en/docs/ads/general/overview/versions).|\n|`consumer_key`||\n|`consumer_secret`||\n|`access_token`||\n|`token_secret`||\n\n## Authentication\n\nAs mentioned above, you need to configure your credentials. To get those, please see the following information:\n\n- [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)\n- [Obtaining Ads Account credentials\n](https://developer.twitter.com/en/docs/ads/general/guides/obtaining-ads-account-access)\n\nPlease be noted that the Ads API currently only supports OAuth 1.0a.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -16,10 +16,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/accounts/{{account_id}}/active_entities?end_time=&entity=&start_time=",
 									"protocol": "https",
@@ -80,7 +76,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "271f619e-4579-4dd9-a3c3-8126f44bc0e1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -90,7 +85,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "73eab28c-24ca-4b88-981f-4eb89a93aa70",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -108,10 +102,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/jobs/accounts/{{account_id}}?",
 									"protocol": "https",
@@ -156,10 +146,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/jobs/accounts/{{account_id}}?end_time=&entity=&entity_ids=&granularity=&metric_groups=&placement=&start_time=",
 									"protocol": "https",
@@ -261,7 +247,8 @@
 									],
 									"variable": [
 										{
-											"key": "job_id"
+											"key": "job_id",
+											"type": "any"
 										}
 									]
 								}
@@ -274,7 +261,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "29f239d9-dc0b-4617-81b0-bc9f6921ea07",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -284,7 +270,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b48fccb8-42fb-4189-beb0-48974e89e66c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -302,10 +287,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/auction_insights?end_time=&granularity=&line_item_ids=&placement=&start_time=",
 									"protocol": "https",
@@ -357,7 +338,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d08c4cb5-64bb-47fa-9614-f07c9a2922e9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -367,7 +347,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "218b451c-c86f-4860-88a8-ddd60ed1b102",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -385,10 +364,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/accounts/{{account_id}}/reach/campaigns?campaign_ids=&end_time=&start_time=",
 									"protocol": "https",
@@ -431,10 +406,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/accounts/{{account_id}}/reach/funding_instruments?funding_instrument_ids=&end_time=&start_time=",
 									"protocol": "https",
@@ -478,7 +449,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "5737dc42-892b-4459-b5a3-0b220d8d4060",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -488,7 +458,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "04fbe8d2-80af-4bcf-af97-db9d3982660b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -506,10 +475,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/stats/accounts/{{account_id}}?end_time=&entity=&entity_ids=&granularity=&metric_groups=&placement=&start_time=",
 									"protocol": "https",
@@ -571,7 +536,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6b646455-8a0e-480b-963e-fe2e25d4e42e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -581,7 +545,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "2df11bc9-8be2-4efd-b88f-1b57d5659ac7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -597,7 +560,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "6a6dccc7-fd53-406e-b1e6-21b5ef957d46",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -607,7 +569,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9fe3821d-675c-4d4c-8138-5618b2f129d1",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -628,15 +589,10 @@
 								"method": "POST",
 								"header": [
 									{
-										"key": "audience-intelligence",
-										"value": "application/json",
-										"type": "text"
+										"key": "Content-Type",
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/audience_intelligence/conversations?conversation_type=&targeting_inputs=&audience_definition=",
 									"protocol": "https",
@@ -679,15 +635,10 @@
 								"method": "POST",
 								"header": [
 									{
-										"key": "audience-intelligence",
-										"value": "application/json",
-										"type": "text"
+										"key": "Content-Type",
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/audience_intelligence/demographics?targeting_inputs=&audience_definition=",
 									"protocol": "https",
@@ -737,7 +688,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e58c816a-f2db-4d3c-aac0-2c1da706c6c7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -747,7 +697,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "77ffb03e-2ec8-49f1-9b09-b0d96864a27f",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -765,10 +714,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/insights/accounts/{{account_id}}?audience_type=",
 									"protocol": "https",
@@ -811,10 +756,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/insights/accounts/{{account_id}}/available_audiences",
 									"protocol": "https",
@@ -840,7 +781,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "caf58e62-a918-4c25-9793-4e790bbf9f33",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -850,7 +790,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "27a1d5a0-565a-48bb-94b1-7db75c4b41d5",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -868,10 +807,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/insights/keywords/search?granularity=&keywords=&start_time=",
 									"protocol": "https",
@@ -931,7 +866,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "45222482-ecf2-4f8e-a83a-dee35e3e2a9d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -941,7 +875,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f3ca6aaa-5605-4246-94ef-3c32dbeafe38",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -959,10 +892,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences/:tailored_audience_id/permissions?",
 									"protocol": "https",
@@ -1019,7 +948,8 @@
 									],
 									"variable": [
 										{
-											"key": "tailored_audience_id"
+											"key": "tailored_audience_id",
+											"type": "any"
 										}
 									]
 								}
@@ -1031,10 +961,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences/:tailored_audience_id/permissions?granted_account_id=&permission_level=",
 									"protocol": "https",
@@ -1065,7 +991,8 @@
 									],
 									"variable": [
 										{
-											"key": "tailored_audience_id"
+											"key": "tailored_audience_id",
+											"type": "any"
 										}
 									]
 								}
@@ -1107,10 +1034,12 @@
 									],
 									"variable": [
 										{
-											"key": "tailored_audience_id"
+											"key": "tailored_audience_id",
+											"type": "any"
 										},
 										{
-											"key": "tailored_audience_permission_id"
+											"key": "tailored_audience_permission_id",
+											"type": "any"
 										}
 									]
 								}
@@ -1123,7 +1052,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "a72c0b3d-f36f-4d53-a04c-0408de872cea",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1133,7 +1061,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "371b0695-4db9-4aea-b819-bc15b421ed3f",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1151,10 +1078,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences?",
 									"protocol": "https",
@@ -1222,10 +1145,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences/:tailored_audience_id?",
 									"protocol": "https",
@@ -1251,7 +1170,8 @@
 									],
 									"variable": [
 										{
-											"key": "tailored_audience_id"
+											"key": "tailored_audience_id",
+											"type": "any"
 										}
 									]
 								}
@@ -1263,10 +1183,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences?name=",
 									"protocol": "https",
@@ -1299,14 +1215,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/tailored_audiences?audience_type=&child_segments=&name=&operation_type=&params=",
 									"protocol": "https",
@@ -1421,7 +1332,8 @@
 									],
 									"variable": [
 										{
-											"key": "tailored_audience_id"
+											"key": "tailored_audience_id",
+											"type": "any"
 										}
 									]
 								}
@@ -1434,7 +1346,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "5ab092b0-5e3b-4320-a078-3242329d1b32",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1444,7 +1355,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cc28c29e-e61f-436f-b2ab-45738b3cf4b9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1464,14 +1374,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences/:tailored_audience_id/users?operation_type=&params=&users=",
 									"protocol": "https",
@@ -1520,7 +1425,8 @@
 									"variable": [
 										{
 											"key": "tailored_audience_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -1533,7 +1439,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6f3d2796-c846-4568-a6bb-e04cb4f03539",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1543,7 +1448,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b20e6d9b-cf31-452b-955f-f566c261a389",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1559,7 +1463,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "61995182-a0bc-4d1b-aeaf-e1bca6133f57",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1569,7 +1472,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "36a431f8-d67c-47c5-92df-d28150b9f608",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1589,10 +1491,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts?",
 									"protocol": "https",
@@ -1652,10 +1550,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}?",
 									"protocol": "https",
@@ -1686,10 +1580,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts",
 									"protocol": "https",
@@ -1711,10 +1601,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}?",
 									"protocol": "https",
@@ -1751,10 +1637,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}",
 									"protocol": "https",
@@ -1778,7 +1660,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "bd0cba57-6384-4133-bd34-29c3cfe4f834",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1788,7 +1669,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "36068e61-8414-4e00-af3d-3c7f7eadf73b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1806,10 +1686,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/authenticated_user_access",
 									"protocol": "https",
@@ -1834,7 +1710,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7b3928ac-d691-4316-b9e6-ffadaf3c2de7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1844,7 +1719,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e159e03b-8e0c-4eae-8154-fc627972ed14",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1862,10 +1736,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/bidding_rules?",
 									"protocol": "https",
@@ -1896,7 +1766,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ecee7ba4-2626-4a90-bf74-326f6a3132ed",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1906,7 +1775,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0d44b98a-a80e-4e49-a5fb-88682fb5c9f4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1924,10 +1792,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns?",
 									"protocol": "https",
@@ -2001,10 +1865,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns/:campaign_id?",
 									"protocol": "https",
@@ -2030,7 +1890,8 @@
 									],
 									"variable": [
 										{
-											"key": "campaign_id"
+											"key": "campaign_id",
+											"type": "any"
 										}
 									]
 								}
@@ -2042,10 +1903,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns?funding_instrument_id=&name=&start_time=",
 									"protocol": "https",
@@ -2130,14 +1987,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/campaigns?operation_type=&params=",
 									"protocol": "https",
@@ -2174,10 +2026,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns/:campaign_id?",
 									"protocol": "https",
@@ -2251,7 +2099,8 @@
 									],
 									"variable": [
 										{
-											"key": "campaign_id"
+											"key": "campaign_id",
+											"type": "any"
 										}
 									]
 								}
@@ -2263,10 +2112,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns/:campaign_id",
 									"protocol": "https",
@@ -2284,7 +2129,8 @@
 									],
 									"variable": [
 										{
-											"key": "campaign_id"
+											"key": "campaign_id",
+											"type": "any"
 										}
 									]
 								}
@@ -2297,7 +2143,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6013e9f2-9e85-41ce-b5ec-993f7d3a94d7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2307,7 +2152,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e765082a-637a-464d-a00c-17f618a36056",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2325,10 +2169,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/content_categories",
 									"protocol": "https",
@@ -2351,7 +2191,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "9e926754-b956-4e55-93db-53a275a483d1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2361,7 +2200,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0be718e5-bd61-4525-8892-c736ab537c4c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2379,10 +2217,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/features?",
 									"protocol": "https",
@@ -2414,10 +2248,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/features?feature_keys=",
 									"protocol": "https",
@@ -2448,10 +2278,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/features?feature_keys=",
 									"protocol": "https",
@@ -2483,7 +2309,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8904f227-5081-405a-ba9e-8e47a109ea1d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2493,7 +2318,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b30482ee-4690-44e9-a667-9f33cb3999e4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2511,10 +2335,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments?",
 									"protocol": "https",
@@ -2576,10 +2396,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments/:funding_instrument_id?funding_instrument_id=",
 									"protocol": "https",
@@ -2610,7 +2426,8 @@
 									],
 									"variable": [
 										{
-											"key": "funding_instrument_id"
+											"key": "funding_instrument_id",
+											"type": "any"
 										}
 									]
 								}
@@ -2622,10 +2439,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments?currency=&start_time=&type=",
 									"protocol": "https",
@@ -2684,10 +2497,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments/:funding_instrument_id?funding_instrument_id=",
 									"protocol": "https",
@@ -2724,7 +2533,8 @@
 									],
 									"variable": [
 										{
-											"key": "funding_instrument_id"
+											"key": "funding_instrument_id",
+											"type": "any"
 										}
 									]
 								}
@@ -2736,10 +2546,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/funding_instruments/:funding_instrument_id?funding_instrument_id=",
 									"protocol": "https",
@@ -2764,7 +2570,8 @@
 									],
 									"variable": [
 										{
-											"key": "funding_instrument_id"
+											"key": "funding_instrument_id",
+											"type": "any"
 										}
 									]
 								}
@@ -2777,7 +2584,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d8a914bd-c32a-485a-8b54-e2bd2497d807",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2787,7 +2593,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "de88205b-37ba-4100-a0c4-ebec764696be",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2805,10 +2610,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/iab_categories?",
 									"protocol": "https",
@@ -2851,7 +2652,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8c1c7101-46be-4bbc-8384-4fb90c7c715c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2861,7 +2661,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f9f3e8b6-8e8e-4032-8e6b-c6b689b32da3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2879,10 +2678,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items?",
 									"protocol": "https",
@@ -2962,10 +2757,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id?",
 									"protocol": "https",
@@ -2991,7 +2782,8 @@
 									],
 									"variable": [
 										{
-											"key": "line_item_id"
+											"key": "line_item_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3003,10 +2795,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items?campaign_id=&objective=&placements=&product_type=",
 									"protocol": "https",
@@ -3066,7 +2854,7 @@
 											"description": "sometimes required",
 											"disabled": true
 										},
-					                    {
+										{
 											"key": "advertiser_user_id",
 											"value": "",
 											"description": "optional",
@@ -3162,14 +2950,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/line_items?operation_type=&params=",
 									"protocol": "https",
@@ -3206,10 +2989,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id?",
 									"protocol": "https",
@@ -3319,7 +3098,8 @@
 									],
 									"variable": [
 										{
-											"key": "line_item_id"
+											"key": "line_item_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3331,10 +3111,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id",
 									"protocol": "https",
@@ -3352,7 +3128,8 @@
 									],
 									"variable": [
 										{
-											"key": "line_item_id"
+											"key": "line_item_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3365,7 +3142,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "2b84d1c8-8a87-45ac-a1d8-5e759d038aef",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3375,7 +3151,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a8dea8e6-fecb-41c0-acb4-98f7fb46f986",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3393,10 +3168,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_item_apps?",
 									"protocol": "https",
@@ -3464,10 +3235,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_item_apps/:line_item_app_id?",
 									"protocol": "https",
@@ -3493,7 +3260,8 @@
 									],
 									"variable": [
 										{
-											"key": "line_item_app_id"
+											"key": "line_item_app_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3505,10 +3273,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_item_apps?app_store_identifier=&line_item_id=&os_type=",
 									"protocol": "https",
@@ -3549,10 +3313,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_item_apps/:line_item_app_id",
 									"protocol": "https",
@@ -3570,7 +3330,8 @@
 									],
 									"variable": [
 										{
-											"key": "line_item_app_id"
+											"key": "line_item_app_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3583,7 +3344,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "623aa941-68b7-48be-8677-7972c55a58a8",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3593,7 +3353,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "25675546-99e9-4171-8521-b2fd79d24213",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3611,10 +3370,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/line_items/placements?",
 									"protocol": "https",
@@ -3646,7 +3401,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "32d71391-f96b-4a74-8e38-5903b0ce1743",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3656,7 +3410,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3d9011f3-9aae-4ac0-b2ba-511dd9548de9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3674,10 +3427,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_creatives?",
 									"protocol": "https",
@@ -3751,10 +3500,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_creatives/:media_creative_id?",
 									"protocol": "https",
@@ -3780,7 +3525,8 @@
 									],
 									"variable": [
 										{
-											"key": "media_creative_id"
+											"key": "media_creative_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3792,10 +3538,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_creatives?account_id&account_media_id&line_item_id",
 									"protocol": "https",
@@ -3842,10 +3584,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_creatives/:media_creative_id",
 									"protocol": "https",
@@ -3863,7 +3601,8 @@
 									],
 									"variable": [
 										{
-											"key": "media_creative_id"
+											"key": "media_creative_id",
+											"type": "any"
 										}
 									]
 								}
@@ -3876,7 +3615,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "295b8dbd-93ca-4b18-ae39-1a97fe05c4c6",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3886,7 +3624,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ec8f7617-7d86-4394-a616-b18763d036eb",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3904,10 +3641,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_accounts?",
 									"protocol": "https",
@@ -3975,10 +3708,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_accounts/:promoted_account_id?",
 									"protocol": "https",
@@ -4004,7 +3733,8 @@
 									],
 									"variable": [
 										{
-											"key": "promoted_account_id"
+											"key": "promoted_account_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4016,10 +3746,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_accounts?line_item_id=&user_id=",
 									"protocol": "https",
@@ -4055,10 +3781,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_accounts/:promoted_account_id",
 									"protocol": "https",
@@ -4076,7 +3798,8 @@
 									],
 									"variable": [
 										{
-											"key": "promoted_account_id"
+											"key": "promoted_account_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4089,7 +3812,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "14587d34-cf17-4cc9-b6cf-b139cb83ca24",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4099,7 +3821,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8262fdd8-fcee-4702-a0be-8145ef56ee48",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4117,10 +3838,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_tweets?",
 									"protocol": "https",
@@ -4188,10 +3905,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_tweets/:promoted_tweet_id?",
 									"protocol": "https",
@@ -4217,7 +3930,8 @@
 									],
 									"variable": [
 										{
-											"key": "promoted_tweet_id"
+											"key": "promoted_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4229,10 +3943,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_tweets?line_item_id=&tweet_ids=",
 									"protocol": "https",
@@ -4268,10 +3978,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promoted_tweets/:promoted_tweet_id",
 									"protocol": "https",
@@ -4289,7 +3995,8 @@
 									],
 									"variable": [
 										{
-											"key": "promoted_tweet_id"
+											"key": "promoted_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4302,7 +4009,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1b9e54ae-4019-4f0d-b38f-359686583fe1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4312,7 +4018,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "54af7fe0-4a14-4f1f-9d8c-55608a0b8547",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4330,10 +4035,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promotable_users?",
 									"protocol": "https",
@@ -4395,10 +4096,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/promotable_users/:promotable_user_id?",
 									"protocol": "https",
@@ -4430,7 +4127,8 @@
 									],
 									"variable": [
 										{
-											"key": "promotable_user_id"
+											"key": "promotable_user_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4443,7 +4141,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "5d2ad062-8c9d-46ac-9670-eec004b91f37",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4453,7 +4150,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "797aa2da-948c-4a75-81e0-ad65d3cedb82",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4471,10 +4167,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/recommendations",
 									"protocol": "https",
@@ -4498,10 +4190,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/recommendations/:recommendation_id",
 									"protocol": "https",
@@ -4519,7 +4207,8 @@
 									],
 									"variable": [
 										{
-											"key": "recommendation_id"
+											"key": "recommendation_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4532,7 +4221,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "61983f0f-ca57-463b-afbf-22c160b77cdd",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4542,7 +4230,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "87ef90ce-3c7a-4c1b-bde3-ba2f07a9d72b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4560,10 +4247,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/reach_estimate?bid_amount_local_micro=&campaign_daily_budget_amount_local_micro=&currency=&objective=&product_type=",
 									"protocol": "https",
@@ -4753,7 +4436,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "0ba7949d-a277-423f-b832-a8dea73cfe6d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4763,7 +4445,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5aa0769f-5572-436c-a55a-9cdbf62735db",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4781,10 +4462,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_promoted_tweets?",
 									"protocol": "https",
@@ -4852,10 +4529,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_promoted_tweets/:scheduled_promoted_tweet_id?scheduled_promoted_tweet_id=",
 									"protocol": "https",
@@ -4886,7 +4559,8 @@
 									],
 									"variable": [
 										{
-											"key": "scheduled_promoted_tweet_id"
+											"key": "scheduled_promoted_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4898,10 +4572,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_promoted_tweets?line_item_id=&scheduled_tweet_id=",
 									"protocol": "https",
@@ -4937,10 +4607,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_promoted_tweets/:scheduled_promoted_tweet_id?scheduled_promoted_tweet_id=",
 									"protocol": "https",
@@ -4965,7 +4631,8 @@
 									],
 									"variable": [
 										{
-											"key": "scheduled_promoted_tweet_id"
+											"key": "scheduled_promoted_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -4978,7 +4645,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1b65f5c0-a8cf-4aa0-a05e-91058e33503c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4988,7 +4654,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "179b220b-73d6-41ac-b83c-ba88290f36d3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5006,10 +4671,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_criteria?line_item_ids=",
 									"protocol": "https",
@@ -5082,10 +4743,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_criteria/:targeting_criterion_id?",
 									"protocol": "https",
@@ -5117,7 +4774,8 @@
 									],
 									"variable": [
 										{
-											"key": "targeting_criterion_id"
+											"key": "targeting_criterion_id",
+											"type": "any"
 										}
 									]
 								}
@@ -5129,10 +4787,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_criteria?line_item_id=&targeting_type=&targeting_value=",
 									"protocol": "https",
@@ -5187,14 +4841,9 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/batch/accounts/{{account_id}}/targeting_criteria?operation_type=&params=",
 									"protocol": "https",
@@ -5231,10 +4880,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_criteria/:targeting_criterion_id",
 									"protocol": "https",
@@ -5252,7 +4897,8 @@
 									],
 									"variable": [
 										{
-											"key": "targeting_criterion_id"
+											"key": "targeting_criterion_id",
+											"type": "any"
 										}
 									]
 								}
@@ -5265,7 +4911,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f7980282-668d-44fe-b02d-8af22c5b7a82",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5275,7 +4920,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f8359548-2df6-44df-8d23-0f9d3593d2fc",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5293,10 +4937,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/app_store_categories?",
 									"protocol": "https",
@@ -5333,10 +4973,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/behavior_taxonomies?",
 									"protocol": "https",
@@ -5397,10 +5033,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/behaviors?",
 									"protocol": "https",
@@ -5461,10 +5093,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/conversations?",
 									"protocol": "https",
@@ -5507,10 +5135,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/devices?",
 									"protocol": "https",
@@ -5547,10 +5171,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/events?event_types=",
 									"protocol": "https",
@@ -5616,10 +5236,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/interests?",
 									"protocol": "https",
@@ -5662,10 +5278,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/languages?",
 									"protocol": "https",
@@ -5708,10 +5320,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/locations?",
 									"protocol": "https",
@@ -5766,10 +5374,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/network_operators?",
 									"protocol": "https",
@@ -5818,10 +5422,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/platform_versions?",
 									"protocol": "https",
@@ -5852,10 +5452,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/platforms?",
 									"protocol": "https",
@@ -5898,10 +5494,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/tv_markets",
 									"protocol": "https",
@@ -5924,10 +5516,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/tv_shows?tv_market_locale=",
 									"protocol": "https",
@@ -5976,7 +5564,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e6c1a4c2-4ceb-462d-a87b-3ea32a9bbae3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5986,7 +5573,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6963fe1f-746d-4665-a435-10ed75214cf1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6004,10 +5590,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/targeting_suggestions?suggestion_type=&targeting_values=",
 									"protocol": "https",
@@ -6050,7 +5632,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "a12460fe-57b4-4752-add7-e7120876f2a6",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6060,7 +5641,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "17f727ad-e64b-4c36-84c9-cf167fa98c00",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6078,10 +5658,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tax_settings",
 									"protocol": "https",
@@ -6105,10 +5681,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tax_settings?",
 									"protocol": "https",
@@ -6291,7 +5863,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "512b87f9-ff11-4eee-ac69-240cdca1ad3c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6301,7 +5872,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a2f44add-abe9-4725-9af3-6d958c96fb35",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6319,10 +5889,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/user_settings/:user_id?user_id=",
 									"protocol": "https",
@@ -6347,7 +5913,8 @@
 									],
 									"variable": [
 										{
-											"key": "user_id"
+											"key": "user_id",
+											"type": "any"
 										}
 									]
 								}
@@ -6359,10 +5926,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/user_settings/:user_id?user_id=",
 									"protocol": "https",
@@ -6411,7 +5974,8 @@
 									],
 									"variable": [
 										{
-											"key": "user_id"
+											"key": "user_id",
+											"type": "any"
 										}
 									]
 								}
@@ -6424,7 +5988,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e3b92615-4b49-4197-8d1f-1c68b677edea",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6434,7 +5997,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0ae99a44-7845-4ac2-84f3-0575bfd29a38",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6450,7 +6012,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "72c31036-9d42-4a60-885e-348b4a5a2fd7",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -6460,7 +6021,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c53318cd-eb1a-4296-afd5-0480a08b1d57",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -6480,10 +6040,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/account_media?",
 									"protocol": "https",
@@ -6545,10 +6101,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/account_media/:account_media_id?",
 									"protocol": "https",
@@ -6574,7 +6126,8 @@
 									],
 									"variable": [
 										{
-											"key": "account_media_id"
+											"key": "account_media_id",
+											"type": "any"
 										}
 									]
 								}
@@ -6586,10 +6139,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/account_media/:account_media_id",
 									"protocol": "https",
@@ -6607,7 +6156,8 @@
 									],
 									"variable": [
 										{
-											"key": "account_media_id"
+											"key": "account_media_id",
+											"type": "any"
 										}
 									]
 								}
@@ -6620,7 +6170,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "5895a70f-2c89-4298-80b3-cba5c78f2057",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6630,7 +6179,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c4b08bfd-60a0-4a2a-96c8-d54eb8cc66f2",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6648,10 +6196,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/all?card_uris=",
 									"protocol": "https",
@@ -6689,10 +6233,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/all/:card_id?",
 									"protocol": "https",
@@ -6719,7 +6259,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -6732,7 +6273,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f272144c-e255-437e-b4f1-c1c7c7a99e84",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6742,7 +6282,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7529cd5d-3dce-4394-977f-611fbe7c930b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6760,10 +6299,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scoped_timeline?",
 									"protocol": "https",
@@ -6837,10 +6372,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweet?",
 									"protocol": "https",
@@ -6938,10 +6469,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweet/preview?",
 									"protocol": "https",
@@ -6998,10 +6525,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweet/preview/:tweet_id?",
 									"protocol": "https",
@@ -7028,7 +6551,8 @@
 									],
 									"variable": [
 										{
-											"key": "tweet_id"
+											"key": "tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7041,7 +6565,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ee81d12a-f8c2-4102-8d32-1d27406ae301",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7051,7 +6574,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "50fcf865-de68-49a0-8192-4fb35926a076",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7069,10 +6591,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets?",
 									"protocol": "https",
@@ -7116,10 +6634,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id",
 									"protocol": "https",
@@ -7137,7 +6651,8 @@
 									],
 									"variable": [
 										{
-											"key": "draft_tweet_id"
+											"key": "draft_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7149,10 +6664,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets?",
 									"protocol": "https",
@@ -7208,10 +6719,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id?",
 									"protocol": "https",
@@ -7255,7 +6762,8 @@
 									],
 									"variable": [
 										{
-											"key": "draft_tweet_id"
+											"key": "draft_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7267,10 +6775,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id",
 									"protocol": "https",
@@ -7288,7 +6792,8 @@
 									],
 									"variable": [
 										{
-											"key": "draft_tweet_id"
+											"key": "draft_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7300,10 +6805,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/preview/:draft_tweet_id",
 									"protocol": "https",
@@ -7322,7 +6823,8 @@
 									],
 									"variable": [
 										{
-											"key": "draft_tweet_id"
+											"key": "draft_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7334,10 +6836,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/preview/:draft_tweet_id",
 									"protocol": "https",
@@ -7356,7 +6854,8 @@
 									],
 									"variable": [
 										{
-											"key": "draft_tweet_id"
+											"key": "draft_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7369,7 +6868,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "97d1e0cc-dd30-47ea-bb09-071f759ed6aa",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7379,7 +6877,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cbe19557-d11d-49ae-9c8b-d0e156614bf8",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7397,10 +6894,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets?",
 									"protocol": "https",
@@ -7444,10 +6937,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets/:scheduled_tweet_id?scheduled_tweet_id=",
 									"protocol": "https",
@@ -7472,7 +6961,8 @@
 									],
 									"variable": [
 										{
-											"key": "scheduled_tweet_id"
+											"key": "scheduled_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7484,10 +6974,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets?scheduled_at=",
 									"protocol": "https",
@@ -7548,10 +7034,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets/:scheduled_tweet_id?scheduled_tweet_id=",
 									"protocol": "https",
@@ -7606,7 +7088,8 @@
 									],
 									"variable": [
 										{
-											"key": "scheduled_tweet_id"
+											"key": "scheduled_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7618,10 +7101,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets/:scheduled_tweet_id?scheduled_tweet_id=",
 									"protocol": "https",
@@ -7646,7 +7125,8 @@
 									],
 									"variable": [
 										{
-											"key": "scheduled_tweet_id"
+											"key": "scheduled_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7658,10 +7138,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/scheduled_tweets/preview/:scheduled_tweet_id?scheduled_tweet_id=",
 									"protocol": "https",
@@ -7687,7 +7163,8 @@
 									],
 									"variable": [
 										{
-											"key": "scheduled_tweet_id"
+											"key": "scheduled_tweet_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7700,7 +7177,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4cc0fad0-98b3-4108-b3d5-163630809e6a",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7710,7 +7186,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "38bfa2db-36f0-4747-b217-f27888ab2340",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7728,10 +7203,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website?",
 									"protocol": "https",
@@ -7800,10 +7271,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id?",
 									"protocol": "https",
@@ -7830,7 +7297,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7842,10 +7310,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website?name=&website_title=&website_url=",
 									"protocol": "https",
@@ -7899,10 +7363,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id?",
 									"protocol": "https",
@@ -7953,7 +7413,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -7965,10 +7426,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id",
 									"protocol": "https",
@@ -7987,7 +7444,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8000,7 +7458,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f5cf6885-b2eb-44eb-91f2-ea9f0c33b97a",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8010,7 +7467,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "930e3092-daf6-44c1-9d20-b5cfe698965e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8028,10 +7484,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website?",
 									"protocol": "https",
@@ -8100,10 +7552,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id?",
 									"protocol": "https",
@@ -8130,7 +7578,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8142,10 +7591,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website?name=&title=&video_id=&website_url=",
 									"protocol": "https",
@@ -8192,10 +7637,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id?",
 									"protocol": "https",
@@ -8240,7 +7681,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8252,10 +7694,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id",
 									"protocol": "https",
@@ -8274,7 +7712,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8287,7 +7726,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "82be12b9-1998-41a7-8094-5742179e0f24",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8297,7 +7735,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "06244fe0-06ae-42ac-bdf2-2c4d3288be9c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8315,10 +7752,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download?",
 									"protocol": "https",
@@ -8387,10 +7820,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id?",
 									"protocol": "https",
@@ -8417,7 +7846,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8429,10 +7859,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download?name=&country_code=",
 									"protocol": "https",
@@ -8523,10 +7949,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id?",
 									"protocol": "https",
@@ -8613,7 +8035,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8625,10 +8048,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id",
 									"protocol": "https",
@@ -8647,7 +8066,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8660,7 +8080,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6394cc6c-bce2-49a1-9986-64a123fff741",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8670,7 +8089,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8e53117f-60cb-4e88-8aa2-1e7a0a437619",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8688,10 +8106,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation?",
 									"protocol": "https",
@@ -8760,10 +8174,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id?",
 									"protocol": "https",
@@ -8790,7 +8200,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -8802,10 +8213,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation?first_cta=&first_cta_tweet=&name=&thank_you_text=",
 									"protocol": "https",
@@ -8918,10 +8325,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id?",
 									"protocol": "https",
@@ -9032,7 +8435,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9044,10 +8448,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id",
 									"protocol": "https",
@@ -9066,7 +8466,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9079,7 +8480,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "86b05dbc-007e-4c6c-87bc-3d3e3e56ffbd",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9089,7 +8489,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bf21ea11-35cd-4588-a9af-11617378dbcb",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9107,10 +8506,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message?",
 									"protocol": "https",
@@ -9179,10 +8574,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message/:card_id?",
 									"protocol": "https",
@@ -9209,7 +8600,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9221,10 +8613,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message?first_cta=&first_cta_welcome_message_id=&name=&recipient_user_id=",
 									"protocol": "https",
@@ -9319,10 +8707,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message?card_id=",
 									"protocol": "https",
@@ -9420,10 +8804,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_direct_message/:card_id",
 									"protocol": "https",
@@ -9442,7 +8822,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9455,7 +8836,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "edb8a31b-b548-4b48-856b-1271afe42769",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9465,7 +8845,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a8d6f5bb-7e99-4467-a160-26ad5c2c57da",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9483,10 +8862,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download?",
 									"protocol": "https",
@@ -9555,10 +8930,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id?",
 									"protocol": "https",
@@ -9585,7 +8956,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9597,10 +8969,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download?country_code=&name=&video_id=",
 									"protocol": "https",
@@ -9690,10 +9058,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id?",
 									"protocol": "https",
@@ -9780,7 +9144,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9792,10 +9157,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id",
 									"protocol": "https",
@@ -9814,7 +9175,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9827,7 +9189,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "53b1d415-699d-4f0e-bc56-f629aee66e10",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9837,7 +9198,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bacbd78c-9033-48a6-8dd3-392a21ea5ed7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9855,10 +9215,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation?",
 									"protocol": "https",
@@ -9927,10 +9283,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id?",
 									"protocol": "https",
@@ -9957,7 +9309,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -9969,10 +9322,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation?first_cta=&first_cta_tweet=&name=&thank_you_text=&video_id=",
 									"protocol": "https",
@@ -10090,10 +9439,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id?",
 									"protocol": "https",
@@ -10210,7 +9555,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -10222,10 +9568,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id",
 									"protocol": "https",
@@ -10244,7 +9586,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -10257,7 +9600,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "51680aca-5190-426e-8e58-3c530b265c12",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10267,7 +9609,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "4007f904-559d-4c00-aff5-3d971a558736",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10285,10 +9626,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message?",
 									"protocol": "https",
@@ -10357,10 +9694,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id?",
 									"protocol": "https",
@@ -10387,7 +9720,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -10399,10 +9733,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message?first_cta=&first_cta_welcome_message_id=&name=&recipient_user_id=&video_id=",
 									"protocol": "https",
@@ -10496,10 +9826,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id?",
 									"protocol": "https",
@@ -10586,7 +9912,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -10598,10 +9925,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id",
 									"protocol": "https",
@@ -10620,7 +9943,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -10633,7 +9957,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d8243cf9-f672-4082-85b0-e0eaf00e96fc",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10643,7 +9966,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d12112b0-89db-4845-bd33-a10fb34a8912",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10661,10 +9983,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library?",
 									"protocol": "https",
@@ -10708,10 +10026,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key",
 									"protocol": "https",
@@ -10729,7 +10043,8 @@
 									],
 									"variable": [
 										{
-											"key": "media_key"
+											"key": "media_key",
+											"type": "any"
 										}
 									]
 								}
@@ -10741,10 +10056,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library?",
 									"protocol": "https",
@@ -10824,10 +10135,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key?",
 									"protocol": "https",
@@ -10883,7 +10190,8 @@
 									],
 									"variable": [
 										{
-											"key": "media_key"
+											"key": "media_key",
+											"type": "any"
 										}
 									]
 								}
@@ -10895,10 +10203,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key",
 									"protocol": "https",
@@ -10916,7 +10220,8 @@
 									],
 									"variable": [
 										{
-											"key": "media_key"
+											"key": "media_key",
+											"type": "any"
 										}
 									]
 								}
@@ -10929,7 +10234,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d79c9545-6611-43ad-8198-b655b36e23f3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10939,7 +10243,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "2627768d-50d4-4c8c-924e-df7239b265e4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10957,10 +10260,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/poll?",
 									"protocol": "https",
@@ -11029,10 +10328,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/poll/:card_id?",
 									"protocol": "https",
@@ -11059,7 +10354,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -11071,10 +10367,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/poll?duration_in_minutes=&first_choice=&name=&second_choice=",
 									"protocol": "https",
@@ -11139,10 +10431,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/poll/:card_id",
 									"protocol": "https",
@@ -11161,7 +10449,8 @@
 									],
 									"variable": [
 										{
-											"key": "card_id"
+											"key": "card_id",
+											"type": "any"
 										}
 									]
 								}
@@ -11174,7 +10463,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "71b2f652-e8d0-4d1c-bba7-35abe28771fa",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11184,7 +10472,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "550693e4-7983-4c36-9f9e-f5a99b09cedb",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11202,10 +10489,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions?",
 									"protocol": "https",
@@ -11273,10 +10556,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions/:preroll_call_to_action_id?",
 									"protocol": "https",
@@ -11302,7 +10581,8 @@
 									],
 									"variable": [
 										{
-											"key": "preroll_call_to_action_id"
+											"key": "preroll_call_to_action_id",
+											"type": "any"
 										}
 									]
 								}
@@ -11314,10 +10594,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions?call_to_action=&call_to_action_url=&line_item_id=",
 									"protocol": "https",
@@ -11358,10 +10634,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions/:preroll_call_to_action_id?",
 									"protocol": "https",
@@ -11393,7 +10665,8 @@
 									],
 									"variable": [
 										{
-											"key": "preroll_call_to_action_id"
+											"key": "preroll_call_to_action_id",
+											"type": "any"
 										}
 									]
 								}
@@ -11405,10 +10678,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/preroll_call_to_actions/:preroll_call_to_action_id",
 									"protocol": "https",
@@ -11426,7 +10695,8 @@
 									],
 									"variable": [
 										{
-											"key": "preroll_call_to_action_id"
+											"key": "preroll_call_to_action_id",
+											"type": "any"
 										}
 									]
 								}
@@ -11439,7 +10709,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "78d5d6dd-9f45-4d8f-badb-476cdbf44de9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11449,7 +10718,68 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "32a0a04f-611c-4303-b652-040ad770b826",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Tweet Previews",
+					"item": [
+						{
+							"name": "accounts/:account_id/tweet_previews",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweet_previews?tweet_ids=&tweet_type=",
+									"protocol": "https",
+									"host": [
+										"ads-api",
+										"twitter",
+										"com"
+									],
+									"path": [
+										"{{version}}",
+										"accounts",
+										"{{account_id}}",
+										"tweet_previews"
+									],
+									"query": [
+										{
+											"key": "tweet_ids",
+											"value": "",
+											"description": "required"
+										},
+										{
+											"key": "tweet_type",
+											"value": "",
+											"description": "required"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweet-previews",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11465,7 +10795,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "9292affd-d79d-4dcc-9b7c-0f7f7bb43b7a",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -11475,7 +10804,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9eec7e40-679b-4370-90c7-b88c09fcc483",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -11495,10 +10823,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_tags?",
 									"protocol": "https",
@@ -11560,10 +10884,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_tags/:app_event_tag_id?",
 									"protocol": "https",
@@ -11589,7 +10909,8 @@
 									],
 									"variable": [
 										{
-											"key": "app_event_tag_id"
+											"key": "app_event_tag_id",
+											"type": "any"
 										}
 									]
 								}
@@ -11601,10 +10922,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_tags?app_store_identifier=&conversion_type=&os_type=&provider_app_event_id=&provider_app_event_name=",
 									"protocol": "https",
@@ -11679,10 +10996,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_tags/:id",
 									"protocol": "https",
@@ -11700,7 +11013,8 @@
 									],
 									"variable": [
 										{
-											"key": "id"
+											"key": "id",
+											"type": "any"
 										}
 									]
 								}
@@ -11713,7 +11027,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7b3ab8b4-135b-4ebe-ab2f-62b244bffdf0",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11723,7 +11036,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "05bdcade-c8c4-4e01-836e-514c3ee8cb66",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11741,10 +11053,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_provider_configurations?",
 									"protocol": "https",
@@ -11806,10 +11114,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_provider_configurations/:id?",
 									"protocol": "https",
@@ -11835,7 +11139,8 @@
 									],
 									"variable": [
 										{
-											"key": "id"
+											"key": "id",
+											"type": "any"
 										}
 									]
 								}
@@ -11847,10 +11152,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_provider_configurations?provider_advertiser_id=",
 									"protocol": "https",
@@ -11881,10 +11182,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_event_provider_configurations/:id",
 									"protocol": "https",
@@ -11902,7 +11199,8 @@
 									],
 									"variable": [
 										{
-											"key": "id"
+											"key": "id",
+											"type": "any"
 										}
 									]
 								}
@@ -11915,7 +11213,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7960d1ee-16ed-4ae0-813b-37211a38bd0d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11925,7 +11222,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "df5cf94a-8c6a-4eae-9629-015602049fae",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11943,10 +11239,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_lists?",
 									"protocol": "https",
@@ -12008,10 +11300,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_lists/:app_list_id?app_list_id=",
 									"protocol": "https",
@@ -12042,7 +11330,8 @@
 									],
 									"variable": [
 										{
-											"key": "app_list_id"
+											"key": "app_list_id",
+											"type": "any"
 										}
 									]
 								}
@@ -12054,10 +11343,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_lists?app_store_identifiers=&name=",
 									"protocol": "https",
@@ -12093,10 +11378,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/app_lists/:app_list_id?app_list_id=",
 									"protocol": "https",
@@ -12121,7 +11402,8 @@
 									],
 									"variable": [
 										{
-											"key": "app_list_id"
+											"key": "app_list_id",
+											"type": "any"
 										}
 									]
 								}
@@ -12134,7 +11416,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e7928376-0cfb-448d-ae86-50b45a2d1fec",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12144,7 +11425,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8845478c-3827-4421-9b41-d9f837b6f261",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12162,10 +11442,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/conversion_attribution?app_id=&conversion_time=&conversion_type=&hashed_device_id=&os_type=",
 									"protocol": "https",
@@ -12245,7 +11521,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "5e0682f5-4b80-40e8-bda8-f74bba102118",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12255,7 +11530,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e3c171a9-1125-4909-b407-4a4ff00e4c19",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12273,10 +11547,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/conversion_event?app_id=&conversion_time=&conversion_type=&hashed_device_id=&os_type=",
 									"protocol": "https",
@@ -12356,7 +11626,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "3d9286ac-1c17-4f6c-96b0-b357d2d70fb2",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12366,7 +11635,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7dcc6a2f-9ef2-4c4f-9f61-1ef2a2c58159",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12384,10 +11652,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags?",
 									"protocol": "https",
@@ -12449,10 +11713,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags/:web_event_tag_id?",
 									"protocol": "https",
@@ -12478,7 +11738,8 @@
 									],
 									"variable": [
 										{
-											"key": "web_event_tag_id"
+											"key": "web_event_tag_id",
+											"type": "any"
 										}
 									]
 								}
@@ -12490,10 +11751,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags?click_window=&name=&retargeting_enabled=&type=&view_through_window=",
 									"protocol": "https",
@@ -12544,10 +11801,6 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags/:web_event_tag_id?",
 									"protocol": "https",
@@ -12597,7 +11850,8 @@
 									],
 									"variable": [
 										{
-											"key": "web_event_tag_id"
+											"key": "web_event_tag_id",
+											"type": "any"
 										}
 									]
 								}
@@ -12609,10 +11863,6 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/web_event_tags/:web_event_tag_id",
 									"protocol": "https",
@@ -12630,7 +11880,8 @@
 									],
 									"variable": [
 										{
-											"key": "web_event_tag_id"
+											"key": "web_event_tag_id",
+											"type": "any"
 										}
 									]
 								}
@@ -12643,7 +11894,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "89771382-b543-476a-bbaf-933dacb23596",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12653,7 +11903,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e043079b-5dcf-4372-ac4f-f3bffdad6a5c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12669,7 +11918,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "02195257-68b1-48c9-aa17-f4c309b1bdbe",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -12679,7 +11927,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3c03987e-07bd-4cd3-a127-cc6e3a52c7dc",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -12738,7 +11985,6 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2fff0c72-fe0c-437b-9bfc-a42ce4211c18",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -12748,7 +11994,6 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "380262bb-e264-4cf1-9c37-09b95b6bf76e",
 				"type": "text/javascript",
 				"exec": [
 					""
