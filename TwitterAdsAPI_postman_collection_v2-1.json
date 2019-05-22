@@ -589,7 +589,7 @@
 								"method": "POST",
 								"header": [
 									{
-										"key": "audience-intelligence",
+										"key": "Content-Type",
 										"value": "application/json"
 									}
 								],
@@ -635,7 +635,7 @@
 								"method": "POST",
 								"header": [
 									{
-										"key": "audience-intelligence",
+										"key": "Content-Type",
 										"value": "application/json"
 									}
 								],
