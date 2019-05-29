@@ -46,7 +46,7 @@ This collection includes a pre-configured [environment](https://learning.getpost
 |`access_token`||
 |`token_secret`||
 
-<img width="734" alt="Screen Shot 2019-05-01 at 4 08 50" src="https://user-images.githubusercontent.com/11495867/56986920-11095900-6bc7-11e9-8d21-3e23bc9d6bd7.png">
+![edf0e81fb6672044f7d14a3af0b5bddb](https://user-images.githubusercontent.com/11495867/58537792-94ea4b80-822e-11e9-8dc2-5f9a08dc2232.gif)
 
 ## Authentication
 
