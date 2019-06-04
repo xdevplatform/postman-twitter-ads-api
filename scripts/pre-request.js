@@ -3,6 +3,7 @@
  * where certain request fails if it has a query parameter that includes some special characters.
  *
  * NOTE: This Pre-script is only available for "GET" request.
+ *       (or might be able to use for other methods that have no request body such as "DELETE")
  *       Ther's a workaround for POST request.
  *       See: https://github.com/twitterdev/postman-twitter-ads-api/issues/2
  * 
