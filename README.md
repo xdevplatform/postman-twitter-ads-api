@@ -1,11 +1,11 @@
 # postman-twitter-ads-api
 
-This is a Postman collection for the Twitter Ads API endpoints. Please see the following documentation for more details about the API spec:
+This is a Postman collection for the Twitter Ads API endpoints. Please see the following documentation for more details about the API spec:  
 https://developer.twitter.com/en/docs/ads/general/overview
 
 ## twurl (CLI) and Postman (GUI)
 
-Over the years, we've encouraged you to install [twurl](https://developer.twitter.com/en/docs/tutorials/using-twurl.html) - our official command-line HTTP client tool, tailored specifically for the Twitter API.
+Over the years, we've encouraged you to install [twurl](https://developer.twitter.com/en/docs/tutorials/using-twurl.html) - our official command-line HTTP client tool, tailored specifically for the Twitter API.  
 While twurl continues to be a great CLI (command-line interface) tool we love, we also wanted to provide additional options that can optimize your development experience for the Ads API furthermore.
 
 We've received various feedback about the tool. For instance, sometimes CLI tools such as twurl can be cumbersome to set up complicated queries on command line and change on-the-fly in testing. Installing twurl might not be possible (restricted) in a certain scenario as it requires setting up Ruby environment on your machine. We believe Postman could be useful in these situations.
@@ -33,9 +33,9 @@ Download this repository and import below files into your Postman client:
 
 While we keep this collection up to date by adding new endpoints/removing retired endpoints, your installed collection will not be updated automatically, unfortunately. Therefore, we encourage you to subscribe to this repository and re-install (import) when we release a new version.
 
-## Environment
+### Set up your Environment variables
 
-This collection includes a pre-configured [environment](https://learning.getpostman.com/docs/postman/environments_and_globals/manage_environments/) setting. You will be needing to set up below variables in order to run each request:
+This collection includes a pre-configured [environment](https://learning.getpostman.com/docs/postman/environments_and_globals/manage_environments/) setting. All you need is just fill in the below variables value in order to run each request (See also the below GIF as to how to open and edit the environment setting):
 
 |Name|Description|
 |---|---|
@@ -50,7 +50,7 @@ This collection includes a pre-configured [environment](https://learning.getpost
 
 ## Authentication
 
-As mentioned above, you need to configure your credentials. To get those, please see the following information:
+As mentioned above, you need to configure your credentials to environment variables. To get those credentials, please see the following documentation:
 
 - [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)
 - [Obtaining Ads Account credentials
@@ -58,8 +58,8 @@ As mentioned above, you need to configure your credentials. To get those, please
 
 You could also use [tw-oob-oauth-cli](https://github.com/smaeda-ks/tw-oob-oauth-cli) - A simple CLI client for Twitter's OOB OAuth ([PIN-based OAuth](https://developer.twitter.com/en/docs/basics/authentication/overview/pin-based-oauth)), to get your tokens.
 
-Please be noted that the Ads API currently only supports OAuth 1.0a.
-Also, since this collection is configured to use environment variables for authentication across the requests, you don't need to change the setting at all.
+Please be noted that the Ads API currently only supports OAuth 1.0a.  
+Also, since this collection is configured to use environment variables for authentication across the requests, you don't need to change the `Authorization` setting of your top-level object (collection). Please leave it as is as shown below.
 
 <img width="807" alt="Screen Shot 2019-05-01 at 4 07 00" src="https://user-images.githubusercontent.com/11495867/56987218-ca682e80-6bc7-11e9-92b6-5fca54b67102.png">
 
