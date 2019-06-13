@@ -4,7 +4,7 @@
  *
  * NOTE: This Pre-script is only available for "GET" request.
  *       (or might be able to use for other methods that have no request body such as "DELETE")
- *       Ther's a workaround for POST request.
+ *       There's a workaround for POST request.
  *       See: https://github.com/twitterdev/postman-twitter-ads-api/issues/2
  * 
  * In order to use this Pre-request script, you need to change your "Authorization" type to
