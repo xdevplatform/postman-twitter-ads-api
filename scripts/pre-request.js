@@ -11,6 +11,9 @@
  * "No Auth" only for the target request and do not apply to the top-level object.
  */
 
+const sdk = require('postman-collection');
+
+
 // fetch all env variables that are currently defined
 const env_variables = pm.environment.toObject({
     excludeDisabled: true
@@ -45,15 +48,13 @@ for (var key in oauth_parameter_string_object) {
 }
 
 // convert query string into object (+ encode)
-const url_query_string = pm.request.url.getQueryString({
-    ignoreDisabled: true
-});
-const url_query_string_array = url_query_string.split('&');
-let url_query_string_object = {};
-if (url_query_string !== "") {
-    url_query_string_object = JSON.parse(`{"${url_query_string.replace(/&/g, '","').replace(/=/g,'":"')}"}`, function(key, value) {
-        return key === "" ? value : encodeURIComponent(value)
-    });
+const url_query_string_object = {};
+const url = new sdk.Url(pm.request.url);
+const query = url.query;
+for (var i = 0; i < query.members[0].value.length; i++) {
+    if (!query.members[0].value[i].hasOwnProperty('disabled')) {
+        url_query_string_object[query.members[0].value[i].key] = encodeURIComponent(String(query.members[0].value[i].value));
+    }
 }
 
 // parse request.params
@@ -107,7 +108,7 @@ pm.request.headers.add({
 });
 
 // Escape URI parameters using encodeURIComponent => RFC3986
-if (url_query_string_array.length !== 0) {
+if (Object.keys(url_query_string_object).length !== 0) {
     const request_parameter_array = [];
     for (var key in url_query_string_object) {
         request_parameter_array.push(key + '=' + url_query_string_object[key]);
