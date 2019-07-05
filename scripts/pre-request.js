@@ -49,13 +49,16 @@ for (var key in oauth_parameter_string_object) {
 
 // convert query string into object (+ encode)
 const url_query_string_object = {};
-const url = new sdk.Url(pm.request.url);
-const query = url.query;
-for (var i = 0; i < query.members[0].value.length; i++) {
-    if (!query.members[0].value[i].hasOwnProperty('disabled')) {
-        url_query_string_object[query.members[0].value[i].key] = encodeURIComponent(String(query.members[0].value[i].value));
-    }
-}
+
+const url_query_string_object_array = sdk.QueryParam.parse(
+    pm.request.url.getQueryString({
+        ignoreDisabled: true
+    })
+);
+
+url_query_string_object_array.forEach(item => {
+    url_query_string_object[item.key] = encodeURIComponent(item.value);
+});
 
 // parse request.params
 for (var key in url_query_string_object) {
