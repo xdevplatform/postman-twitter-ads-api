@@ -42,10 +42,7 @@ oauth_parameter_string_object.oauth_version = '1.0';
 oauth_parameter_string_object.oauth_timestamp = Math.round((new Date()).getTime() / 1000);
 
 // for Authorization request header (copy object)
-const oauth_authorization_header_object = {};
-for (var key in oauth_parameter_string_object) {
-    oauth_authorization_header_object[key] = oauth_parameter_string_object[key];
-}
+const oauth_authorization_header_object = Object.assign({}, oauth_parameter_string_object);
 
 // convert query string into object (+ encode)
 const url_query_string_object = {};
@@ -60,10 +57,8 @@ url_query_string_object_array.forEach(item => {
     url_query_string_object[item.key] = encodeURIComponent(item.value);
 });
 
-// parse request.params
-for (var key in url_query_string_object) {
-    oauth_parameter_string_object[key] = url_query_string_object[key];
-}
+// merge query parameter
+Object.assign(oauth_parameter_string_object, url_query_string_object);
 
 // sort object by key
 const oauth_parameter_string_object_ordered = {};
