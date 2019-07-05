@@ -13,6 +13,13 @@
 
 const sdk = require('postman-collection');
 
+function toArray(object) {
+    let array = [];
+    Object.keys(object).forEach(key => {
+        array.push(`${key}=${object[key]}`);
+    });
+    return array
+}
 
 // fetch all env variables that are currently defined
 const env_variables = pm.environment.toObject({
@@ -66,14 +73,8 @@ Object.keys(oauth_parameter_string_object).sort().forEach(function(key) {
     oauth_parameter_string_object_ordered[key] = oauth_parameter_string_object[key];
 });
 
-// convert object into array
-const oauth_parameter_string_array = [];
-for (var key in oauth_parameter_string_object_ordered) {
-    oauth_parameter_string_array.push(`${key}=${oauth_parameter_string_object_ordered[key]}`);
-}
-
 // generate parameter string
-const oauth_parameter_string = oauth_parameter_string_array.join('&');
+const oauth_parameter_string = toArray(oauth_parameter_string_object_ordered).join('&');
 
 // replace dynamic variables
 let base_host = pm.request.url.getOAuth1BaseUrl();
@@ -91,27 +92,19 @@ const oauth_signature = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(oauth_ba
 
 oauth_authorization_header_object.oauth_signature = encodeURIComponent(oauth_signature);
 
-// convert object into array (for Authorization header string)
-const oauth_authorization_header_array = [];
-for (var key in oauth_authorization_header_object) {
-    oauth_authorization_header_array.push(`${key}="${oauth_authorization_header_object[key]}"`);
-}
-
-const oauth_authorization_header = oauth_authorization_header_array.join(', ');
+// generate Authorization header string
+const oauth_authorization_header = toArray(oauth_authorization_header_object).join(', ');
 
 // generate Authorization header
 pm.request.headers.add({
     key: 'Authorization',
-    value: 'OAuth ' + oauth_authorization_header
+    value: `OAuth ${oauth_authorization_header}`
 });
 
 // Escape URI parameters using encodeURIComponent => RFC3986
 if (Object.keys(url_query_string_object).length !== 0) {
-    const request_parameter_array = [];
-    for (var key in url_query_string_object) {
-        request_parameter_array.push(key + '=' + url_query_string_object[key]);
-    }
-    const request_parameter_string = request_parameter_array.join('&');
+    // generate query parameter string
+    const request_parameter_string = toArray(url_query_string_object).join('&');
 
-    pm.request.url = pm.request.url.getOAuth1BaseUrl() + "?" + request_parameter_string;
+    pm.request.url = `${pm.request.url.getOAuth1BaseUrl()}?${request_parameter_string}`;
 }
