@@ -1,10 +1,11 @@
 /*
  * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue
- * where certain request fails if it has a query parameter that includes some special characters.
+ * where certain request fails if the query parameter includes some specific characters.
+ * https://tools.ietf.org/html/rfc3986#section-2.2 (rfc3986, gen-delims reserved characters)
  *
- * NOTE: This Pre-script is only available for "GET" request.
- *       (or might be able to use for other methods that have no request body such as "DELETE")
- *       There's a workaround for POST request.
+ * NOTE: This Pre-script is intended to use with "GET" request but might be able to
+ *       work with other methods that have no request body.
+ *       For "POST" request, there's another workaround.
  *       See: https://github.com/twitterdev/postman-twitter-ads-api/issues/2
  * 
  * In order to use this Pre-request script, you need to change your "Authorization" type to
