@@ -6603,6 +6603,72 @@
 					"name": "Tweets",
 					"item": [
 						{
+							"name": "accounts/:account_id/tweets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweets?tweet_type",
+									"protocol": "https",
+									"host": [
+										"ads-api",
+										"twitter",
+										"com"
+									],
+									"path": [
+										"{{version}}",
+										"accounts",
+										"{{account_id}}",
+										"tweets"
+									],
+									"query": [
+										{
+											"key": "tweet_type",
+											"value": "",
+											"description": "required"
+										},
+										{
+											"key": "count",
+											"value": "",
+											"description": "optional",
+											"disabled": true
+										},
+										{
+											"key": "cursor",
+											"value": "",
+											"description": "optional",
+											"disabled": true
+										},
+										{
+											"key": "timeline_type",
+											"value": "",
+											"description": "optional",
+											"disabled": true
+										},
+										{
+											"key": "trim_user",
+											"value": "",
+											"description": "optional",
+											"disabled": true
+										},
+										{
+											"key": "tweet_ids",
+											"value": "",
+											"description": "optional",
+											"disabled": true
+										},
+										{
+											"key": "user_id",
+											"value": "",
+											"description": "optional",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "accounts/:account_id/tweet",
 							"event": [
 								{
