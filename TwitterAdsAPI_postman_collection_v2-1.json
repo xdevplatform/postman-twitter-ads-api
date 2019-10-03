@@ -216,7 +216,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -526,7 +525,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -604,7 +602,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -716,7 +713,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -928,7 +924,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -952,8 +947,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Audience",
@@ -1049,7 +1043,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1135,7 +1128,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1322,7 +1314,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1623,7 +1614,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1717,7 +1707,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -1741,8 +1730,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Campaign Management",
@@ -1946,7 +1934,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1997,7 +1984,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2054,7 +2040,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2438,7 +2423,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2487,7 +2471,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2606,7 +2589,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2882,7 +2864,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2951,7 +2932,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3448,7 +3428,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3651,7 +3630,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3709,7 +3687,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3924,7 +3901,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4122,7 +4098,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4320,7 +4295,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4453,7 +4427,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4669,7 +4642,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4879,7 +4851,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5146,7 +5117,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5794,7 +5764,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5863,7 +5832,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6095,7 +6063,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6221,7 +6188,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -6245,8 +6211,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Creatives",
@@ -6405,7 +6370,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6633,7 +6597,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6941,7 +6904,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -7407,6 +7369,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "accounts/:account_id/draft_tweets/preview/:draft_tweet_id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/preview/:draft_tweet_id",
+									"protocol": "https",
+									"host": [
+										"ads-api",
+										"twitter",
+										"com"
+									],
+									"path": [
+										"{{version}}",
+										"accounts",
+										"{{account_id}}",
+										"draft_tweets",
+										"preview",
+										":draft_tweet_id"
+									],
+									"variable": [
+										{
+											"key": "draft_tweet_id",
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"description": "https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets",
@@ -7430,7 +7424,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -7949,7 +7942,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -8467,7 +8459,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -8984,7 +8975,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -9575,7 +9565,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -10212,7 +10201,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -10557,7 +10545,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -11159,7 +11146,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -11819,7 +11805,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -12177,7 +12162,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -12437,7 +12421,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -12667,7 +12650,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -12914,7 +12896,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -12977,7 +12958,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -13001,8 +12981,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Measurement",
@@ -13235,7 +13214,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -13422,7 +13400,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -13626,7 +13603,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -13732,7 +13708,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -13838,7 +13813,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -14107,7 +14081,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -14131,8 +14104,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
 	],
 	"auth": {
@@ -14199,6 +14171,5 @@
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
