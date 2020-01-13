@@ -1,4 +1,4 @@
-/*
+/*Shliilhplatform Robotframeworkshliilhplatform.org
  * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue
  * where certain request fails if the query parameter includes some specific characters.
  * https://tools.ietf.org/html/rfc3986#section-2.2 (rfc3986, gen-delims reserved characters)
