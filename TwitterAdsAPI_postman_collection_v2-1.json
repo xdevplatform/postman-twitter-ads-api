@@ -1,5 +1,6 @@
 {
 	"info": {
+		"_postman_id": "e2108654-7ccc-4e18-a02f-a94f798e76b2",
 		"name": "Twitter Ads API",
 		"description": "This is a Postman collection for the Twitter Ads API endpoints. Please see the following documentation for more details:\nhttps://developer.twitter.com/en/docs/ads/general/overview\n\nIn case you have an API-related question, you can also go to the [community forum](https://twittercommunity.com/c/advertiser-api) and search/ask with [required information](https://twittercommunity.com/t/what-information-do-i-need-to-provide-in-order-to-get-help-on-the-forums-as-quickly-as-possible/58097).\n\n\n## Installation\n\n### Quick install\n\nMake sure you installed the [Postman client](https://www.getpostman.com/downloads/) on your machine then just click `Run in Postman` button at the right-top. Or, you could also install this collection from your Postman client directly by opening `New` => `Template` then search \"Twitter Ads API\".\n\n### Manual install\n\nYou can also download this collection files from GitHub repo here:  \nhttps://github.com/twitterdev/postman-twitter-ads-api\n\n## Environment\n\nThis collection includes a pre-configured environment setting. You will be needing to set up below variables in order to run each request:\n\n|Name|Description|\n|---|---|\n|`account_id`|Your Ads Account ID.|\n|`version`|Please use the [latest version](https://developer.twitter.com/en/docs/ads/general/overview/versions).|\n|`consumer_key`||\n|`consumer_secret`||\n|`access_token`||\n|`token_secret`||\n\n## Authentication\n\nAs mentioned above, you need to configure your credentials. To get those, please see the following information:\n\n- [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)\n- [Obtaining Ads Account credentials\n](https://developer.twitter.com/en/docs/ads/general/guides/obtaining-ads-account-access)\n\nPlease be noted that the Ads API currently only supports OAuth 1.0a.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -17,6 +18,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "ff0f2831-a045-4156-947b-1b123eed2754",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -200,6 +202,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "271f619e-4579-4dd9-a3c3-8126f44bc0e1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -209,6 +212,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "73eab28c-24ca-4b88-981f-4eb89a93aa70",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -271,6 +275,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "b3c3fcbe-dc0e-4581-a4c2-25e4df0f1c2d",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -495,6 +500,7 @@
 									],
 									"variable": [
 										{
+											"id": "128ec6cf-7d0f-4b45-ab81-3d5d47cfd105",
 											"key": "job_id",
 											"type": "any"
 										}
@@ -509,6 +515,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "29f239d9-dc0b-4617-81b0-bc9f6921ea07",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -518,6 +525,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "b48fccb8-42fb-4189-beb0-48974e89e66c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -586,6 +594,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "d08c4cb5-64bb-47fa-9614-f07c9a2922e9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -595,6 +604,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "218b451c-c86f-4860-88a8-ddd60ed1b102",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -697,6 +707,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "5737dc42-892b-4459-b5a3-0b220d8d4060",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -706,6 +717,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "04fbe8d2-80af-4bcf-af97-db9d3982660b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -724,6 +736,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "6dfdd7e4-fb84-4021-bec5-6a8a4f68666a",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -908,6 +921,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "6b646455-8a0e-480b-963e-fe2e25d4e42e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -917,6 +931,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "2df11bc9-8be2-4efd-b88f-1b57d5659ac7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -932,6 +947,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "6a6dccc7-fd53-406e-b1e6-21b5ef957d46",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -941,6 +957,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "9fe3821d-675c-4d4c-8138-5618b2f129d1",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1027,6 +1044,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "caf58e62-a918-4c25-9793-4e790bbf9f33",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1036,6 +1054,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "27a1d5a0-565a-48bb-94b1-7db75c4b41d5",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1112,6 +1131,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "45222482-ecf2-4f8e-a83a-dee35e3e2a9d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1121,6 +1141,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "f3ca6aaa-5605-4246-94ef-3c32dbeafe38",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1194,6 +1215,7 @@
 									],
 									"variable": [
 										{
+											"id": "bcde5dae-6735-43ba-a453-417c0d47b2f4",
 											"key": "tailored_audience_id",
 											"type": "any"
 										}
@@ -1237,6 +1259,7 @@
 									],
 									"variable": [
 										{
+											"id": "a336d7b3-410c-4d76-a3eb-1ed091572b0e",
 											"key": "tailored_audience_id",
 											"type": "any"
 										}
@@ -1280,10 +1303,12 @@
 									],
 									"variable": [
 										{
+											"id": "623c2373-69a3-457c-8e5a-4d03408029b3",
 											"key": "tailored_audience_id",
 											"type": "any"
 										},
 										{
+											"id": "095b161b-c394-46ce-bc15-2b1c96d3ad1c",
 											"key": "tailored_audience_permission_id",
 											"type": "any"
 										}
@@ -1298,6 +1323,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "a72c0b3d-f36f-4d53-a04c-0408de872cea",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1307,6 +1333,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "371b0695-4db9-4aea-b819-bc15b421ed3f",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1325,7 +1352,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tailored_audiences?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -1422,6 +1449,7 @@
 									],
 									"variable": [
 										{
+											"id": "150940c1-9fed-4508-8537-823b87d6c4e9",
 											"key": "tailored_audience_id",
 											"type": "any"
 										}
@@ -1584,6 +1612,7 @@
 									],
 									"variable": [
 										{
+											"id": "fae98da5-bcaa-402f-929e-ca0acef77764",
 											"key": "tailored_audience_id",
 											"type": "any"
 										}
@@ -1598,6 +1627,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "5ab092b0-5e3b-4320-a078-3242329d1b32",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1607,6 +1637,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "cc28c29e-e61f-436f-b2ab-45738b3cf4b9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1676,6 +1707,7 @@
 									],
 									"variable": [
 										{
+											"id": "0c6b748f-48a4-441a-9b64-b48fe3698b6a",
 											"key": "tailored_audience_id",
 											"value": "",
 											"type": "string"
@@ -1691,6 +1723,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "6f3d2796-c846-4568-a6bb-e04cb4f03539",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1700,6 +1733,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "b20e6d9b-cf31-452b-955f-f566c261a389",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1715,6 +1749,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "61995182-a0bc-4d1b-aeaf-e1bca6133f57",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1724,6 +1759,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "36a431f8-d67c-47c5-92df-d28150b9f608",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1744,7 +1780,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -1860,7 +1896,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}?",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -1874,7 +1910,7 @@
 									],
 									"query": [
 										{
-											"key": "account_name",
+											"key": "name",
 											"value": "",
 											"description": "optional",
 											"disabled": true
@@ -1918,6 +1954,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "bd0cba57-6384-4133-bd34-29c3cfe4f834",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1927,6 +1964,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "36068e61-8414-4e00-af3d-3c7f7eadf73b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1968,6 +2006,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "7b3928ac-d691-4316-b9e6-ffadaf3c2de7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1977,6 +2016,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "e159e03b-8e0c-4eae-8154-fc627972ed14",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2024,6 +2064,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "ecee7ba4-2626-4a90-bf74-326f6a3132ed",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2033,6 +2074,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "0d44b98a-a80e-4e49-a5fb-88682fb5c9f4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2051,7 +2093,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/campaigns?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -2154,6 +2196,7 @@
 									],
 									"variable": [
 										{
+											"id": "aa228a00-5091-45f5-988f-ff4922614b5d",
 											"key": "campaign_id",
 											"type": "any"
 										}
@@ -2363,6 +2406,7 @@
 									],
 									"variable": [
 										{
+											"id": "5fac1847-895c-442f-b525-425380c740f6",
 											"key": "campaign_id",
 											"type": "any"
 										}
@@ -2393,6 +2437,7 @@
 									],
 									"variable": [
 										{
+											"id": "3da9e1cc-e482-434e-99fc-49edcac07997",
 											"key": "campaign_id",
 											"type": "any"
 										}
@@ -2407,6 +2452,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "6013e9f2-9e85-41ce-b5ec-993f7d3a94d7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2416,6 +2462,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "e765082a-637a-464d-a00c-17f618a36056",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2455,6 +2502,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "9e926754-b956-4e55-93db-53a275a483d1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2464,6 +2512,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "0be718e5-bd61-4525-8892-c736ab537c4c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2573,6 +2622,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "8904f227-5081-405a-ba9e-8e47a109ea1d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2582,6 +2632,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "b30482ee-4690-44e9-a667-9f33cb3999e4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2690,6 +2741,7 @@
 									],
 									"variable": [
 										{
+											"id": "1aa7d603-e82b-475d-89b1-6853db4625e7",
 											"key": "funding_instrument_id",
 											"type": "any"
 										}
@@ -2797,6 +2849,7 @@
 									],
 									"variable": [
 										{
+											"id": "9fc9e466-2c7a-48d9-9ed0-8b0e8371ab8b",
 											"key": "funding_instrument_id",
 											"type": "any"
 										}
@@ -2834,6 +2887,7 @@
 									],
 									"variable": [
 										{
+											"id": "4c7a6545-731f-4cf6-b22b-726bf9263d41",
 											"key": "funding_instrument_id",
 											"type": "any"
 										}
@@ -2848,6 +2902,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "d8a914bd-c32a-485a-8b54-e2bd2497d807",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2857,6 +2912,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "de88205b-37ba-4100-a0c4-ebec764696be",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2916,6 +2972,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "8c1c7101-46be-4bbc-8384-4fb90c7c715c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2925,6 +2982,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "f9f3e8b6-8e8e-4032-8e6b-c6b689b32da3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2943,7 +3001,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -3052,6 +3110,7 @@
 									],
 									"variable": [
 										{
+											"id": "56a0866b-6d3e-4c88-96aa-1f5624562c6d",
 											"key": "line_item_id",
 											"type": "any"
 										}
@@ -3260,7 +3319,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/line_items/:line_item_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -3368,6 +3427,7 @@
 									],
 									"variable": [
 										{
+											"id": "3bd239ae-6dbb-4504-aef5-7fbd9054b52e",
 											"key": "line_item_id",
 											"type": "any"
 										}
@@ -3398,6 +3458,7 @@
 									],
 									"variable": [
 										{
+											"id": "ef49532b-f577-4ca6-abb4-4a9a5400a0ca",
 											"key": "line_item_id",
 											"type": "any"
 										}
@@ -3412,6 +3473,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "2b84d1c8-8a87-45ac-a1d8-5e759d038aef",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3421,6 +3483,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "a8dea8e6-fecb-41c0-acb4-98f7fb46f986",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3530,6 +3593,7 @@
 									],
 									"variable": [
 										{
+											"id": "05d74ab8-2d0b-4056-814e-0dd8d809e7d8",
 											"key": "line_item_app_id",
 											"type": "any"
 										}
@@ -3600,6 +3664,7 @@
 									],
 									"variable": [
 										{
+											"id": "5f4d4177-b6db-4767-bd81-e445206f02ee",
 											"key": "line_item_app_id",
 											"type": "any"
 										}
@@ -3614,6 +3679,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "623aa941-68b7-48be-8677-7972c55a58a8",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3623,6 +3689,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "25675546-99e9-4171-8521-b2fd79d24213",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3671,6 +3738,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "32d71391-f96b-4a74-8e38-5903b0ce1743",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3680,6 +3748,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "3d9011f3-9aae-4ac0-b2ba-511dd9548de9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3795,6 +3864,7 @@
 									],
 									"variable": [
 										{
+											"id": "5e27dce1-2e2c-4f75-b2a3-d22124a62b48",
 											"key": "media_creative_id",
 											"type": "any"
 										}
@@ -3825,17 +3895,17 @@
 									"query": [
 										{
 											"key": "account_id",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
 											"key": "account_media_id",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
 											"key": "line_item_id",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -3871,6 +3941,7 @@
 									],
 									"variable": [
 										{
+											"id": "0092682b-7043-4588-b8c1-1b26d5bdf343",
 											"key": "media_creative_id",
 											"type": "any"
 										}
@@ -3885,6 +3956,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "295b8dbd-93ca-4b18-ae39-1a97fe05c4c6",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -3894,6 +3966,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "ec8f7617-7d86-4394-a616-b18763d036eb",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4003,6 +4076,7 @@
 									],
 									"variable": [
 										{
+											"id": "99b463c3-6159-4a90-ab3d-f27d11b2f85e",
 											"key": "promoted_account_id",
 											"type": "any"
 										}
@@ -4068,6 +4142,7 @@
 									],
 									"variable": [
 										{
+											"id": "7a7eba72-d749-40a2-a70b-440d9f8ef26c",
 											"key": "promoted_account_id",
 											"type": "any"
 										}
@@ -4082,6 +4157,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "14587d34-cf17-4cc9-b6cf-b139cb83ca24",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4091,6 +4167,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "8262fdd8-fcee-4702-a0be-8145ef56ee48",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4200,6 +4277,7 @@
 									],
 									"variable": [
 										{
+											"id": "f0d8e346-d722-451c-af8b-fa1d0fd9e003",
 											"key": "promoted_tweet_id",
 											"type": "any"
 										}
@@ -4265,6 +4343,7 @@
 									],
 									"variable": [
 										{
+											"id": "0a1a0f3e-e25f-497a-9668-8ffd9178acd9",
 											"key": "promoted_tweet_id",
 											"type": "any"
 										}
@@ -4279,6 +4358,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "1b9e54ae-4019-4f0d-b38f-359686583fe1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4288,6 +4368,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "54af7fe0-4a14-4f1f-9d8c-55608a0b8547",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4397,6 +4478,7 @@
 									],
 									"variable": [
 										{
+											"id": "0fb24af7-d830-463a-80a0-57e2b1591628",
 											"key": "promotable_user_id",
 											"type": "any"
 										}
@@ -4411,6 +4493,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "5d2ad062-8c9d-46ac-9670-eec004b91f37",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4420,221 +4503,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					],
-					"_postman_isSubFolder": true
-				},
-				{
-					"name": "Reach Estimate",
-					"item": [
-						{
-							"name": "accounts/:account_id/reach_estimate",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/reach_estimate?bid_amount_local_micro=&campaign_daily_budget_amount_local_micro=&currency=&objective=&product_type=",
-									"protocol": "https",
-									"host": [
-										"ads-api",
-										"twitter",
-										"com"
-									],
-									"path": [
-										"{{version}}",
-										"accounts",
-										"{{account_id}}",
-										"reach_estimate"
-									],
-									"query": [
-										{
-											"key": "bid_amount_local_micro",
-											"value": "",
-											"description": "required"
-										},
-										{
-											"key": "campaign_daily_budget_amount_local_micro",
-											"value": "",
-											"description": "required"
-										},
-										{
-											"key": "currency",
-											"value": "",
-											"description": "required"
-										},
-										{
-											"key": "objective",
-											"value": "",
-											"description": "required"
-										},
-										{
-											"key": "product_type",
-											"value": "",
-											"description": "required"
-										},
-										{
-											"key": "age_buckets",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "app_store_categories",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "app_store_categories_expanded",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "behaviors",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "behaviors_expanded",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "bid_type",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "broad_keywords",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "conversations",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "devices",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "exact_keywords",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "followers_of_users",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "gender",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "interests",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "languages",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "locations",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "network_operators",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "phrase_keywords",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "platforms",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "platform_versions",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "similar_to_followers_of_users",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "tailored_audience",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "tailored_audience_expanded",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										},
-										{
-											"key": "wifi_only",
-											"value": "",
-											"description": "optional",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"description": "https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/reach-estimate",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
+								"id": "797aa2da-948c-4a75-81e0-ad65d3cedb82",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4749,6 +4618,7 @@
 									],
 									"variable": [
 										{
+											"id": "635f0b55-fb1a-45e5-a792-5f7b8a01b874",
 											"key": "scheduled_promoted_tweet_id",
 											"type": "any"
 										}
@@ -4821,6 +4691,7 @@
 									],
 									"variable": [
 										{
+											"id": "fa718ef7-7b4b-4999-b96f-e3a538411544",
 											"key": "scheduled_promoted_tweet_id",
 											"type": "any"
 										}
@@ -4835,6 +4706,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "1b65f5c0-a8cf-4aa0-a05e-91058e33503c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4844,6 +4716,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "179b220b-73d6-41ac-b83c-ba88290f36d3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4964,6 +4837,7 @@
 									],
 									"variable": [
 										{
+											"id": "f2a7e86b-b8b8-49c9-81b7-2c24753f6983",
 											"key": "targeting_criterion_id",
 											"type": "any"
 										}
@@ -5015,7 +4889,7 @@
 										},
 										{
 											"key": "operator_type",
-											"value": null,
+											"value": "",
 											"description": "optional",
 											"disabled": true
 										}
@@ -5087,6 +4961,7 @@
 									],
 									"variable": [
 										{
+											"id": "0e6f4675-2a40-4a91-ad81-0694e174aad4",
 											"key": "targeting_criterion_id",
 											"type": "any"
 										}
@@ -5101,6 +4976,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "f7980282-668d-44fe-b02d-8af22c5b7a82",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5110,6 +4986,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "f8359548-2df6-44df-8d23-0f9d3593d2fc",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5128,7 +5005,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/app_store_categories",
+									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/app_store_categories?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -5164,7 +5041,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/behavior_taxonomies",
+									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/behavior_taxonomies?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -5218,7 +5095,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/behaviors",
+									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/behaviors?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -5314,7 +5191,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/devices",
+									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/devices?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -5601,7 +5478,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/platform_versions",
+									"raw": "https://ads-api.twitter.com/{{version}}/targeting_criteria/platform_versions?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -5748,6 +5625,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "e6c1a4c2-4ceb-462d-a87b-3ea32a9bbae3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5757,6 +5635,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "6963fe1f-746d-4665-a435-10ed75214cf1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5816,6 +5695,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "a12460fe-57b4-4752-add7-e7120876f2a6",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5825,6 +5705,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "17f727ad-e64b-4c36-84c9-cf167fa98c00",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6047,6 +5928,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "512b87f9-ff11-4eee-ac69-240cdca1ad3c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6056,6 +5938,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "a2f44add-abe9-4725-9af3-6d958c96fb35",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6097,6 +5980,7 @@
 									],
 									"variable": [
 										{
+											"id": "6da511c1-bfb6-48ec-ae84-f8056c006761",
 											"key": "user_id",
 											"type": "any"
 										}
@@ -6158,6 +6042,7 @@
 									],
 									"variable": [
 										{
+											"id": "5caec6d1-6dd5-4e1c-8d62-553a411fb103",
 											"key": "user_id",
 											"type": "any"
 										}
@@ -6172,6 +6057,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "e3b92615-4b49-4197-8d1f-1c68b677edea",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6181,6 +6067,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "0ae99a44-7845-4ac2-84f3-0575bfd29a38",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6189,6 +6076,99 @@
 						}
 					],
 					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Advertiser Business Categories",
+					"item": [
+						{
+							"name": "advertiser_business_categories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ads-api.twitter.com/{{version}}/advertiser_business_categories",
+									"protocol": "https",
+									"host": [
+										"ads-api",
+										"twitter",
+										"com"
+									],
+									"path": [
+										"{{version}}",
+										"advertiser_business_categories"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/advertiser-business-categories\n",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f13f0485-b3c4-4014-af6d-1660db4a25dc",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dda9c307-0690-4696-b372-3c3cfff59ac0",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Audience Summary",
+					"item": [
+						{
+							"name": "accounts/:account_id/audience_summary",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/audience_summary?targeting_criteria",
+									"protocol": "https",
+									"host": [
+										"ads-api",
+										"twitter",
+										"com"
+									],
+									"path": [
+										"{{version}}",
+										"accounts",
+										"{{account_id}}",
+										"audience_summary"
+									],
+									"query": [
+										{
+											"key": "targeting_criteria",
+											"value": "",
+											"description": "required"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/audience-summary",
+					"_postman_isSubFolder": true
 				}
 			],
 			"description": "https://developer.twitter.com/en/docs/ads/campaign-management/overview",
@@ -6196,6 +6176,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "72c31036-9d42-4a60-885e-348b4a5a2fd7",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -6205,6 +6186,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "c53318cd-eb1a-4296-afd5-0480a08b1d57",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -6310,6 +6292,7 @@
 									],
 									"variable": [
 										{
+											"id": "077e3b75-1807-48ef-a2eb-0ab57b62aeff",
 											"key": "account_media_id",
 											"type": "any"
 										}
@@ -6340,6 +6323,7 @@
 									],
 									"variable": [
 										{
+											"id": "233f07f1-0478-4076-bd0c-fa8ed325d89d",
 											"key": "account_media_id",
 											"type": "any"
 										}
@@ -6354,6 +6338,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "5895a70f-2c89-4298-80b3-cba5c78f2057",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6363,6 +6348,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "c4b08bfd-60a0-4a2a-96c8-d54eb8cc66f2",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6381,6 +6367,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "465a2689-075f-423c-899d-3a7effafa594",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -6567,6 +6554,7 @@
 									],
 									"variable": [
 										{
+											"id": "647fc424-3a77-4765-9934-6936f97b9688",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -6581,6 +6569,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "f272144c-e255-437e-b4f1-c1c7c7a99e84",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6590,6 +6579,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "7529cd5d-3dce-4394-977f-611fbe7c930b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6608,7 +6598,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweets?tweet_type",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/tweets?tweet_type=",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -6674,6 +6664,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "f198b6d6-2d36-49c9-b37f-c84c4d58bd43",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -6814,7 +6805,7 @@
 									"query": [
 										{
 											"key": "as_user_id",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -6888,6 +6879,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "ee81d12a-f8c2-4102-8d32-1d27406ae301",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6897,6 +6889,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "50fcf865-de68-49a0-8192-4fb35926a076",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -6974,6 +6967,7 @@
 									],
 									"variable": [
 										{
+											"id": "f1ecdd62-002e-449b-aa7f-524a4908b5a4",
 											"key": "draft_tweet_id",
 											"type": "any"
 										}
@@ -6988,6 +6982,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "904e3df1-45be-453d-8d2b-59c148517002",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -7128,7 +7123,7 @@
 									"query": [
 										{
 											"key": "as_user_id",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -7166,6 +7161,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "5ddd94cd-e1f6-4e04-bb18-42ad6ea3705a",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -7290,7 +7286,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/draft_tweets/:draft_tweet_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -7332,6 +7328,7 @@
 									],
 									"variable": [
 										{
+											"id": "18dd2039-bbe6-49b1-816c-9830ffc59408",
 											"key": "draft_tweet_id",
 											"type": "any"
 										}
@@ -7362,6 +7359,7 @@
 									],
 									"variable": [
 										{
+											"id": "02416318-bf1c-4b50-8c24-77993a598dcf",
 											"key": "draft_tweet_id",
 											"type": "any"
 										}
@@ -7393,6 +7391,7 @@
 									],
 									"variable": [
 										{
+											"id": "a5ff84ac-f1bd-4c89-b5ac-3d3b7969af44",
 											"key": "draft_tweet_id",
 											"value": "",
 											"type": "string"
@@ -7408,6 +7407,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "97d1e0cc-dd30-47ea-bb09-071f759ed6aa",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7417,6 +7417,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "cbe19557-d11d-49ae-9c8b-d0e156614bf8",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7501,6 +7502,7 @@
 									],
 									"variable": [
 										{
+											"id": "9b567973-1034-47b2-929d-964406defe13",
 											"key": "scheduled_tweet_id",
 											"type": "any"
 										}
@@ -7515,6 +7517,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "258c2f24-b032-4afc-955e-6dc593bb60d9",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -7655,7 +7658,7 @@
 									"query": [
 										{
 											"key": "as_user_id",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -7698,6 +7701,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "43cd45a7-3da5-451f-82e0-277920e50173",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -7875,6 +7879,7 @@
 									],
 									"variable": [
 										{
+											"id": "3d0fead3-3aa1-4897-b123-9d5d0e791d4d",
 											"key": "scheduled_tweet_id",
 											"type": "any"
 										}
@@ -7912,6 +7917,7 @@
 									],
 									"variable": [
 										{
+											"id": "80fca9e3-6ca4-4706-b176-f30abdfd68f9",
 											"key": "scheduled_tweet_id",
 											"type": "any"
 										}
@@ -7926,6 +7932,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "4cc0fad0-98b3-4108-b3d5-163630809e6a",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7935,6 +7942,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "38bfa2db-36f0-4747-b217-f27888ab2340",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8046,6 +8054,7 @@
 									],
 									"variable": [
 										{
+											"id": "d73b24d0-b931-4e77-a3de-7f7004f4db1d",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -8060,6 +8069,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "d6459457-0879-432f-a1af-2fcd5106cc0d",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -8231,6 +8241,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "81816ed1-e4de-49e8-bb34-1803f4f10cd5",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -8355,7 +8366,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/website/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -8398,6 +8409,7 @@
 									],
 									"variable": [
 										{
+											"id": "6e3bf928-0a1e-491e-a1b1-454121b445b5",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -8429,6 +8441,7 @@
 									],
 									"variable": [
 										{
+											"id": "59f61cda-5320-4ef7-9cac-41eea697fef8",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -8443,6 +8456,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "f5cf6885-b2eb-44eb-91f2-ea9f0c33b97a",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8452,6 +8466,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "930e3092-daf6-44c1-9d20-b5cfe698965e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8563,6 +8578,7 @@
 									],
 									"variable": [
 										{
+											"id": "5cbbffcc-6420-42e0-b0f0-1bb0b48f0ad8",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -8577,6 +8593,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "1670e783-01c1-4633-a353-bec5c6f4d178",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -8728,7 +8745,7 @@
 										},
 										{
 											"key": "media_key",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -8747,6 +8764,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "0432a723-09be-40f5-a3ff-98528803c813",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -8871,7 +8889,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_website/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -8914,6 +8932,7 @@
 									],
 									"variable": [
 										{
+											"id": "82677ffc-78b7-49f2-b9ec-5a58b68fe6f2",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -8945,6 +8964,7 @@
 									],
 									"variable": [
 										{
+											"id": "5c34f152-150e-4545-9f79-80bd6e40dde0",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -8959,6 +8979,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "82be12b9-1998-41a7-8094-5742179e0f24",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -8968,6 +8989,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "06244fe0-06ae-42ac-bdf2-2c4d3288be9c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9079,6 +9101,7 @@
 									],
 									"variable": [
 										{
+											"id": "0db8388b-91c8-490c-9fef-bbad63035330",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -9093,6 +9116,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "5b96eb54-6538-405f-ad7d-f003ea3d4fe5",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -9301,6 +9325,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "f3360e0e-5085-49e7-b609-f3f9d0bdad5d",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -9425,7 +9450,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_app_download/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -9504,6 +9529,7 @@
 									],
 									"variable": [
 										{
+											"id": "cff19d1e-018b-4a19-9911-6278e9473b70",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -9535,6 +9561,7 @@
 									],
 									"variable": [
 										{
+											"id": "f3a64a82-f34b-4bb8-a9ed-ad88de9992be",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -9549,6 +9576,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "6394cc6c-bce2-49a1-9986-64a123fff741",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9558,6 +9586,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "8e53117f-60cb-4e88-8aa2-1e7a0a437619",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9669,6 +9698,7 @@
 									],
 									"variable": [
 										{
+											"id": "fca7e5d4-3152-4981-be33-36965e519a28",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -9683,6 +9713,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "3daece4a-88a6-47b4-be8d-00657aecea5c",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -9913,6 +9944,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "882da559-ab62-41b1-98a0-300e007b5f30",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -10037,7 +10069,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/image_conversation/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -10140,6 +10172,7 @@
 									],
 									"variable": [
 										{
+											"id": "ded9e91f-2c26-48d8-8d16-0033d496bf80",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -10171,6 +10204,7 @@
 									],
 									"variable": [
 										{
+											"id": "779e4468-7829-4edb-bb73-7443e9fcbbc1",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -10185,6 +10219,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "86b05dbc-007e-4c6c-87bc-3d3e3e56ffbd",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10194,6 +10229,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "bf21ea11-35cd-4588-a9af-11617378dbcb",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10305,6 +10341,7 @@
 									],
 									"variable": [
 										{
+											"id": "2a631b9b-77fb-49f9-ba3f-97831bfc6729",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -10515,6 +10552,7 @@
 									],
 									"variable": [
 										{
+											"id": "100888d5-bf93-4694-b4ad-a6909ce018d8",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -10529,6 +10567,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "edb8a31b-b548-4b48-856b-1271afe42769",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10538,6 +10577,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "a8d6f5bb-7e99-4467-a160-26ad5c2c57da",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -10649,6 +10689,7 @@
 									],
 									"variable": [
 										{
+											"id": "0c4f0b7d-782f-4892-b884-5f8947e4f89c",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -10663,6 +10704,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "e60dfe84-de54-4bc1-b787-07146a549c3b",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -10814,7 +10856,7 @@
 										},
 										{
 											"key": "media_key",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -10876,6 +10918,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "55a6960c-eef7-4301-849b-c56235de0ffe",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -11000,7 +11043,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_app_download/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -11085,6 +11128,7 @@
 									],
 									"variable": [
 										{
+											"id": "4191812c-7303-4b38-acee-ba7e2fd589a8",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -11116,6 +11160,7 @@
 									],
 									"variable": [
 										{
+											"id": "82b2dafb-9a7f-4083-8ff7-44b5b027d0d4",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -11130,6 +11175,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "53b1d415-699d-4f0e-bc56-f629aee66e10",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11139,6 +11185,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "bacbd78c-9033-48a6-8dd3-392a21ea5ed7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11250,6 +11297,7 @@
 									],
 									"variable": [
 										{
+											"id": "9c9297d0-9e9c-4a31-844c-9b4e092aed92",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -11264,6 +11312,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "4004e10f-cb90-48b7-bd05-9ae71f147f47",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -11425,7 +11474,7 @@
 										},
 										{
 											"key": "media_key",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -11505,6 +11554,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "3925bc4d-2292-4a5e-af73-a2d54e411e85",
 										"exec": [
 											"/*",
 											" * This is a Pre-request script for Postman client to remediate OAuth 1.0a issue",
@@ -11629,7 +11679,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_conversation/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -11744,6 +11794,7 @@
 									],
 									"variable": [
 										{
+											"id": "2177e001-628f-41b8-a02b-57288dc79325",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -11775,6 +11826,7 @@
 									],
 									"variable": [
 										{
+											"id": "016ff87b-dd04-41ec-a9a7-f588c9b8cad8",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -11789,6 +11841,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "51680aca-5190-426e-8e58-3c530b265c12",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11798,6 +11851,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "4007f904-559d-4c00-aff5-3d971a558736",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -11909,6 +11963,7 @@
 									],
 									"variable": [
 										{
+											"id": "cb5d06fc-e4c5-4973-84f4-6f43f89392bf",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -11960,7 +12015,7 @@
 										},
 										{
 											"key": "media_key",
-											"value": null,
+											"value": "",
 											"description": "required"
 										},
 										{
@@ -12016,7 +12071,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/cards/video_direct_message/:card_id?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -12101,6 +12156,7 @@
 									],
 									"variable": [
 										{
+											"id": "154a888a-3320-4588-ba79-95ae8fd558f6",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -12132,6 +12188,7 @@
 									],
 									"variable": [
 										{
+											"id": "414fd31e-79b7-45e0-8479-e406e1d1f771",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -12146,6 +12203,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "d8243cf9-f672-4082-85b0-e0eaf00e96fc",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12155,6 +12213,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "d12112b0-89db-4845-bd33-a10fb34a8912",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12173,7 +12232,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -12238,6 +12297,7 @@
 									],
 									"variable": [
 										{
+											"id": "86873a80-3b9e-4004-8dc7-45fd287ce326",
 											"key": "media_key",
 											"type": "any"
 										}
@@ -12252,7 +12312,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -12313,7 +12373,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key",
+									"raw": "https://ads-api.twitter.com/{{version}}/accounts/{{account_id}}/media_library/:media_key?",
 									"protocol": "https",
 									"host": [
 										"ads-api",
@@ -12361,6 +12421,7 @@
 									],
 									"variable": [
 										{
+											"id": "47b496cb-3416-435d-9ce2-e846113d0cb5",
 											"key": "media_key",
 											"type": "any"
 										}
@@ -12391,6 +12452,7 @@
 									],
 									"variable": [
 										{
+											"id": "21a8320d-e50b-46ce-bb3a-6e95efac912c",
 											"key": "media_key",
 											"type": "any"
 										}
@@ -12405,6 +12467,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "d79c9545-6611-43ad-8198-b655b36e23f3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12414,6 +12477,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "2627768d-50d4-4c8c-924e-df7239b265e4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12525,6 +12589,7 @@
 									],
 									"variable": [
 										{
+											"id": "debef539-5b88-4d5f-b144-72ad36a45d11",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -12620,6 +12685,7 @@
 									],
 									"variable": [
 										{
+											"id": "a663d37a-5cdd-4c0a-aacd-eaee11a4d095",
 											"key": "card_id",
 											"type": "any"
 										}
@@ -12634,6 +12700,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "71b2f652-e8d0-4d1c-bba7-35abe28771fa",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12643,6 +12710,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "550693e4-7983-4c36-9f9e-f5a99b09cedb",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12752,6 +12820,7 @@
 									],
 									"variable": [
 										{
+											"id": "8e5b6100-66e3-45b6-8038-08b8fcc5284e",
 											"key": "preroll_call_to_action_id",
 											"type": "any"
 										}
@@ -12836,6 +12905,7 @@
 									],
 									"variable": [
 										{
+											"id": "0df25256-186d-4fc8-bd9b-0dafaf321efe",
 											"key": "preroll_call_to_action_id",
 											"type": "any"
 										}
@@ -12866,6 +12936,7 @@
 									],
 									"variable": [
 										{
+											"id": "85696fbe-8b19-4ac0-b2c5-9a0e57fee58b",
 											"key": "preroll_call_to_action_id",
 											"type": "any"
 										}
@@ -12880,6 +12951,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "78d5d6dd-9f45-4d8f-badb-476cdbf44de9",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12889,6 +12961,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "32a0a04f-611c-4303-b652-040ad770b826",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12942,6 +13015,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "c1301dba-6fa5-457e-b063-10989177eb95",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12951,6 +13025,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "43322a1f-3b11-4261-95b7-e212bdcb40ac",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -12966,6 +13041,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "9292affd-d79d-4dcc-9b7c-0f7f7bb43b7a",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -12975,6 +13051,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "9eec7e40-679b-4370-90c7-b88c09fcc483",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -13080,6 +13157,7 @@
 									],
 									"variable": [
 										{
+											"id": "4f8b0e01-d6c8-4a93-aff1-d8e9f1c7e5b5",
 											"key": "app_event_tag_id",
 											"type": "any"
 										}
@@ -13184,6 +13262,7 @@
 									],
 									"variable": [
 										{
+											"id": "a3c4b9f5-e829-4563-a6b7-44e25b483b57",
 											"key": "id",
 											"type": "any"
 										}
@@ -13198,6 +13277,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "7b3ab8b4-135b-4ebe-ab2f-62b244bffdf0",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13207,6 +13287,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "05bdcade-c8c4-4e01-836e-514c3ee8cb66",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13310,6 +13391,7 @@
 									],
 									"variable": [
 										{
+											"id": "9bee3deb-ba3f-43dd-b034-242cbc378e41",
 											"key": "id",
 											"type": "any"
 										}
@@ -13370,6 +13452,7 @@
 									],
 									"variable": [
 										{
+											"id": "babb95be-9a69-40bd-9435-c9b8e02f3c9b",
 											"key": "id",
 											"type": "any"
 										}
@@ -13384,6 +13467,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "7960d1ee-16ed-4ae0-813b-37211a38bd0d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13393,6 +13477,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "df5cf94a-8c6a-4eae-9629-015602049fae",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13501,6 +13586,7 @@
 									],
 									"variable": [
 										{
+											"id": "5eb0c010-7855-4329-b0b0-c79a9b613202",
 											"key": "app_list_id",
 											"type": "any"
 										}
@@ -13573,6 +13659,7 @@
 									],
 									"variable": [
 										{
+											"id": "5ea08baa-9f51-427a-a032-bb538b5b6b31",
 											"key": "app_list_id",
 											"type": "any"
 										}
@@ -13587,6 +13674,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "e7928376-0cfb-448d-ae86-50b45a2d1fec",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13596,6 +13684,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "8845478c-3827-4421-9b41-d9f837b6f261",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13692,6 +13781,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "5e0682f5-4b80-40e8-bda8-f74bba102118",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13701,6 +13791,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "e3c171a9-1125-4909-b407-4a4ff00e4c19",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13797,6 +13888,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "3d9286ac-1c17-4f6c-96b0-b357d2d70fb2",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13806,6 +13898,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "7dcc6a2f-9ef2-4c4f-9f61-1ef2a2c58159",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -13909,6 +14002,7 @@
 									],
 									"variable": [
 										{
+											"id": "592b31b3-a569-4f96-af04-ec6186ac8cf9",
 											"key": "web_event_tag_id",
 											"type": "any"
 										}
@@ -14021,6 +14115,7 @@
 									],
 									"variable": [
 										{
+											"id": "692d4ecf-797d-4deb-a269-c2d9310103e6",
 											"key": "web_event_tag_id",
 											"type": "any"
 										}
@@ -14051,6 +14146,7 @@
 									],
 									"variable": [
 										{
+											"id": "18671bca-7144-4417-a053-c98731bee340",
 											"key": "web_event_tag_id",
 											"type": "any"
 										}
@@ -14065,6 +14161,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "89771382-b543-476a-bbaf-933dacb23596",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -14074,6 +14171,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "e043079b-5dcf-4372-ac4f-f3bffdad6a5c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -14089,6 +14187,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "02195257-68b1-48c9-aa17-f4c309b1bdbe",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -14098,6 +14197,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "3c03987e-07bd-4cd3-a127-cc6e3a52c7dc",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -14156,6 +14256,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
+				"id": "2fff0c72-fe0c-437b-9bfc-a42ce4211c18",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -14165,6 +14266,7 @@
 		{
 			"listen": "test",
 			"script": {
+				"id": "380262bb-e264-4cf1-9c37-09b95b6bf76e",
 				"type": "text/javascript",
 				"exec": [
 					""
